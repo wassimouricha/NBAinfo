@@ -12,7 +12,7 @@
                     </li>
 
                     <li>
-                        <a href="#" ><i class='bx bxs-phone' id="meme"></i></a> <a href=""  id="momo"> +33 (0) 954 444 555</a>
+                        <a href="#" ><i class='bx bxs-phone' id="meme"></i></a> <a href=""  id="momo"> +1 212-407-8000.</a>
                     </li>
 
                     <li>

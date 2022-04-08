@@ -31,7 +31,7 @@ body{
 }
 
 #golden{
-    background-color: #a09173;
+    background-color: crimson;
    
    
 }
@@ -109,7 +109,7 @@ margin-top: 20px;
 }
 
 .sidebar ul li a:hover{
-    background: #a09173;
+    background: crimson;
 }
 
 .footer_side ul {
@@ -140,7 +140,7 @@ margin-top: 20px;
 }
 
 .iconus{
-    color: #a09173;
+    color: crimson;
   font-size: 50px;
   position: absolute;
   margin-top: 20px;
@@ -150,7 +150,7 @@ margin-top: 20px;
 /* footer */
 
 #goldus{
-    color: #a09173;
+    color: midnightblue;
 }
 .footeurs{
    
@@ -264,7 +264,7 @@ z-index: 10;
  position: absolute;
  top: -8px;
     height: 8px;
-    background:#a09173;
+    background:crimson;
     width: 50%;
     z-index: 100;
     animation: progress-animation 5s forwards infinite
