@@ -1,6 +1,11 @@
-<?php session_start(); 
-require('actions/showalluserprofilaction.php');
+<?php 
+
+require('actions/securiteadmin.php');
+require('actions/showallbooked.php');
+
+   
 ?>
+
 
 
 <!DOCTYPE html>
@@ -19,28 +24,35 @@ require('actions/showalluserprofilaction.php');
            
             <div class="containered">
                 <ul class="listemenud">
-                 <li> <a href="index.php"> <i class="fa-solid fa-calendar"> <span> Accueil </span>  </i></a>  </li>
+                 <li> <a href="reservation.php"> <i class="fa-solid fa-calendar"> <span> Date & Heure </span>  </i></a>  </li>
+                 <li> <a href="menu.php"> <i class="fa-solid fa-calendar"> <span> Menu </span>  </i></a>  </li>
+                 <li> <i class="fa-solid fa-calendar"> <span> Option </span>  </i> </li>
                 </ul>
                 <div class="titrecalend">
                   <h1 >
-                    Voici les Profils
+                    Voici toutes les réservations
                   </h1>
                   
                 </div>
                 <!-- mon tableau de carte -->
                 <div class="cardus">
                  
+               
                   <?php 
-                        while($ausers = $getAllTheProfile->fetch()){
+                        while($booked = $getAllTheBooked->fetch()){
                             ?>
                              <div class="cardass">
-                             <?= '<img class="cardus_image" src="data:image/png|image/jpeg|image/gif|image/jpg;base64,' . base64_encode( $ausers['binu'] ) . '" />'; ?>
+                     
                           <div class="cardus_content">
-                            <p>Pseudo :  <?php echo $ausers['pseudo'];  ?>  </p>
-                            <p> Nom : <?php echo $ausers['nom'];  ?></p>
-                            <p> Prénom : <?php echo $ausers['prenom'];  ?></p>
+                            <p> Date :  <?php echo $booked['date'];  ?>  </p>
+                            <p> Heure :  <?php echo $booked['heure'];  ?></p>
+                            <p> Nom : <?php echo $booked['nom'];  ?></p>
+                            <p> E-mail : <?php echo $booked['email'];  ?></p>
                           </div>
+                          <div class="card_info">
                         
+                          
+                          </div>
                   </div>
                              <?php 
                         }
@@ -48,8 +60,8 @@ require('actions/showalluserprofilaction.php');
                   ?>
 
                       
-                </div>
-                         
+
+                </div>                             
                
 
 
