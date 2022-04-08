@@ -25,7 +25,7 @@
                 </ul>
                 <div class="titrecalend">
                   <h1 >
-                    Réservez une table
+                    Réservez une loge VIP
                   </h1>
                   
                 </div>
@@ -44,22 +44,47 @@
                 </div>
 
                 <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Veuillez selectionner une date:</label>
+                <label for="exampleInputEmail1" class="form-label">Veuillez selectionner une date :</label>
                 <input type="text"  name="rdate" id="datepicker">    
                 </div>
             
                 <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Veuillez selectionner une heure:</label>
+                <label for="exampleInputEmail1" class="form-label">Veuillez selectionner une heure :</label>
                     <select name="rhours" id="selecthours">
-                            <option  name="rhours" value="12h15"><p>12:15</p></option>
-                            <option  name="rhours" value="12h15"><p>12:30</p></option>
-                            <option  name="rhours" value="12h15"><p>12:45</p></option>
-                            <option  name="rhours" value="12h15"><p>13:00</p></option>
+                            
+                            <option  name="rhours" value="13h00"><p>13:00</p></option>
+                            <option  name="rhours" value="15h00"><p>15:00</p></option>
                             <option  name="rhours" value="19h45">19:45</option>
                             <option  name="rhours" value="20h45">20:45</option>
+                            <option  name="rhours" value="21h30">21:30</option>
                         </select>
-                <input type="submit" name="validate"  value="Reservez">
+                
                 </div>
+
+                <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Veuillez selectionner une équipe pour ces playoffs (match à domicile pour l'équipe choisis):</label>
+                    <select name="rteam" id="selecthours">
+                            
+                            <option  name="rteam" value="Heat"><p>Heat</p></option>
+                            <option  name="rteam" value="Bucks"><p>Bucks</p></option>
+                            <option  name="rteam" value="Celtics">Celtics</option>
+                            <option  name="rteam" value="76ers">76ers</option>
+                            <option  name="rteam" value="Raptors">Raptors</option>
+                            <option  name="rteam" value="Cavaliers">Cavaliers</option>
+                            <option  name="rteam" value="Nets">Nets</option>
+                            <option  name="rteam" value="Grizzlies">Grizzlies</option>
+                            <option  name="rteam" value="Warriors">Warriors</option>
+                            <option  name="rteam" value="Mavericks">Mavericks</option>
+                            <option  name="rteam" value="Jazz">Jazz</option>
+                            <option  name="rteam" value="Nuggets">Nuggets</option>
+                            <option  name="rteam" value="Timberwolves">Timberwolves</option>
+                            <option  name="rteam" value="Clippers">Clippers</option>
+                     
+                        </select>
+                
+                </div>
+
+                <input type="submit" name="validate"  value="Reservez">
             </form>
 
             
