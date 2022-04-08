@@ -5,11 +5,7 @@
      
         </div>
         <ul class="nav">
-            <li class="solou" id="golden">
-            <a href="reservation.php" class="binks" id="blackus" >
-                <span class="list_name"><i class='bx bx-star'></i> Réservez Maintenant <i class='bx bx-star'></i></span>
-            </a>
-        </li>
+           
         <?php 
         if(!isset($_SESSION['auth'])){
           ?>
@@ -31,6 +27,12 @@
             <span class="list_name" > Deconnexion </span>
         </a>
     
+        </li>
+
+        <li class="solou" id="golden">
+            <a href="reservation.php" class="binks" id="blackus" >
+                <span class="list_name"><i class='bx bx-star'></i> Réservez Une loge <i class='bx bx-star'></i></span>
+            </a>
         </li>
 
         <li class="solou">
@@ -84,33 +86,17 @@
         } 
           ?>
             </li>
-            <li class="solou">
-            <a href="# " class="binks">
-                <span class="list_name"> Carte Cadeau </span>
-            </a>
-        
-            </li>
+       
             <li class="solou">
             <a href="#" class="binks">
                 <span class="list_name"> Les offres </span>
             </a>
      
             </li>
+        
             <li class="solou">
             <a href="#" class="binks">
-                <span class="list_name"> Le concept </span>
-            </a>
-          
-            </li>
-            <li class="solou">
-            <a href="#" class="binks">
-                <span class="list_name"> Privatisation </span>
-            </a>
-           
-            </li>
-            <li class="solou">
-            <a href="#" class="binks">
-                <span class="list_name"> Actualités du bus </span>
+                <span class="list_name"> Actualités NBA </span>
             </a>
          
             </li>
@@ -127,21 +113,10 @@
 
             </li>
             
-            <li class="solou">
-            <a href="#" class="binks">
-                <span class="list_name"> Photos et videos </span>
-            </a>
-      
-            </li>
-            <li class="solou">
-            <a href="#" class="binks">
-                <span class="list_name"> Questions fréquentes </span>
-            </a>
-      
             </li>
             <li class="solou" >
             <a href="#" class="binks">
-                <span class="list_name"> Contactez le Bustronome Paris </span>
+                <span class="list_name"> Nous contacter </span>
             </a>
            
             </li>
@@ -156,10 +131,10 @@
             </div>
             <ul class="titrou">
                 <li>
-                    <span>ARC DE TRIOMPHE</span>     
+                    <span>NBA siège social</span>     
                 </li>
                 <li>
-                    <a href="https://www.google.com/maps/place/Bustronome+-+Paris.+Restaurant-bus/@48.872752,2.294031,15z/data=!4m5!3m4!1s0x0:0x2b80095c2d0654ca!8m2!3d48.872752!4d2.294031" target="_blank" class="angle">angle avenue kleber</a>
+                    <a href="https://www.google.com/maps/@40.7590625,-73.9764552,3a,75y,20.32h,99.02t/data=!3m7!1e1!3m5!1sofCa3fjVY5eEJGY49emHbg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fpanoid%3DofCa3fjVY5eEJGY49emHbg%26cb_client%3Dmaps_sv.tactile.gps%26w%3D203%26h%3D100%26yaw%3D116.71684%26pitch%3D0%26thumbfov%3D100!7i16384!8i8192" target="_blank" class="angle">Olympic Tower au 645, de la 5 Avenue à New York</a>
 
                 </li>
                 

@@ -16,7 +16,7 @@
                     </li>
 
                     <li>
-                        <a href="#" ><i class='bx bx-mail-send' id="meme"></i></a> <a href="CONTACT@BUSTRONOME.COM" id="goldus" >CONTACT@BUSTRONOME.COM</a>
+                        <a href="#" ><i class='bx bx-mail-send' id="meme"></i></a> <a href="CONTACT@BUSTRONOME.COM" id="goldus" >CONTACT@NBA.COM</a>
                     </li>
 
                     <li class="socialus">
@@ -33,11 +33,11 @@
                  <div class="containerfooterbasdroite">
                     <div class="droite">
                
-                        <span > © 2017 BUSTRONOME.</span> <a href="#"  class="coco">MENTIONS LÉGALES.</a><span > RÉALISATION </span>
+                        <span > © 2022 NBA.</span> <a href="#"  class="coco">MENTIONS LÉGALES.</a><span > RÉALISATION </span>
       
                  </div>
                  <div class="dessous">
-                    <span > Made with </span> <a href="#"  class="coco"> ♥ </a><span > by </span><a href="https://www.cosavostra.com/"   target="_blank" class="coco"> CosaVostra. </a>
+                    <span > Made with </span> <a href="#"  class="coco"> ♥ </a><span > by </span><a href="https://github.com/wassimouricha"   target="_blank" class="coco"> Wassim Bouricha. </a>
                 </div>
                  
 
