@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Ubuntu:ital,wght@1,300&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+
+  
+}
+
+
+body{
+    color: white;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+
+
+/* Sidebar */
+.solou{
+    list-style: none;
+    text-decoration: none;
+ 
+}
+
+#golden{
+    background-color: #a09173;
+   
+   
+}
+
+#blackus{
+    color: #1a1a1a;
+}
+
+.binks{
+    text-decoration: none;
+    color: white;
+}
+
+.motflottantsolo h1{
+    color: white;
+    font-size: 35px;
+    margin-top: 5px;
+}
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    height: 93%;
+    width: 280px ;
+    top: 0;
+    left: 0;
+    
+  
+    
+}
+
+.form-control{
+    width: 50%;
+}
+
+.form-label{
+color: white;
+}
+
+.btn{
+    color: #1a1a1a;
+    background-color: #a09173;
+}
+
+.imagelogo{
+    display: flex;
+   text-align: center;
+    margin: 0 auto;
+   height: 120px;
+   width: 180px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.sidebar ul{
+text-align: center;
+margin-top: 20px;
+
+}
+
+.sidebar ul li{ 
+    
+    height: 40px;
+    width: 100%;
+    list-style: none;
+}
+
+.sidebar ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: 0.4s all ease-in-out linear;
+}
+
+.sidebar ul li a:hover{
+    background: #a09173;
+}
+
+.footer_side ul {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+  
+}
+
+.footer_side ul li a:hover{
+    background: #1a1a1a;
+}
+
+.footer_side{
+    margin-top: auto;
+}
+
+
+.angle{
+    color: #a09173;
+
+}
+
+.titrou{
+    padding-bottom: 0;
+    color: white;
+}
+
+.iconus{
+    color: #a09173;
+  font-size: 50px;
+  position: absolute;
+  margin-top: 20px;
+}
+
+
+/* footer */
+
+#goldus{
+    color: #a09173;
+}
+.footeurs{
+   
+    padding: 20px 0;
+    background-color: #1a1a1a;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    z-index: 10;
+    
+
+}
+
+
+
+ .social  {
+    
+
+    font-size: 20px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    transition:  0.3s ease-in-out;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    opacity: 0.75;
+    text-align: center; 
+}
+ .social :hover{
+    opacity: 0.9;
+    color: #a09173;
+}
+
+.footeurs ul{
+   
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+    
+}
+
+.tailleliste{
+display: flex;
+flex-direction: row;
+}
+
+.coco {
+    text-decoration: none;
+    color: #a09173;
+}
+
+#meme{
+    color: #a09173;
+}
+
+#momo{
+    color: grey;
+}
+
+.footeurs ul a{
+    text-decoration: none;
+    opacity: 0.8;
+    
+}
+
+.footeurs ul li {
+    display: inline-block;  
+    padding: 0 15px;
+}
+.containerfooterbasdroite{
+    display: flex;
+    flex-direction: column;
+    margin-left:  auto;
+    margin-right: 30px;
+}
+.droite{
+    display: flex;
+    font-size: 10px;
+    color: white;
+ 
+    
+}
+
+.dessous{
+   
+        display: flex;
+        font-size: 10px;
+        text-align: right;
+        justify-content: end;
+        color: white;
+    
+}
+
+.pupo{
+position: relative;
+z-index: 10;
+}
+
+.container{
+    z-index: 10;
+    margin-left: 0!important;
+}
+
+.messagus{
+    text-align: center;
+    color: white;
+}
+ /* progress bar */
+#progress-bar{
+ position: absolute;
+ top: -8px;
+    height: 8px;
+    background:#a09173;
+    width: 50%;
+    z-index: 100;
+    animation: progress-animation 5s forwards infinite
+}
+
+
+
+
+@keyframes progress-animation{
+    0%{width: 0%; }
+    100% {width: 100% ;}
+}
+
+.motflottantsolo{
+    top: 80px;
+    left: 300px;
+    position: absolute;
+   
+    font-size: 15px;
+    z-index: 100;
+}
+
+/* carousel */
+
+ .carousel_img{
+    display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+/* Fading animation */
+
+.containere{
+  
+    display: flex;
+    position: fixed;
+    left: 280px;
+    top: 0;
+     height: 93%;
+    width: 100%; 
+    z-index: 10;
+    transition: ease-in-out;
+    flex-direction: column;
+   background-color: #1a1a1a;
+  
+}
+.containered{
+  
+    display: flex;
+    position: fixed;
+    left: 280px;
+    top: 0;
+     height: 93%;
+    width: 100%; 
+    z-index: 10;
+    transition: ease-in-out;
+    flex-direction: column;
+   background-color: #1a1a1a;
+   overflow-y: scroll;
+}
+
+.containered ul li {
+    color: white;
+}
+
+.titrecalend h1{
+    color: white;
+}
+
+.listemenud{
+    display: flex;
+    padding-left: 0;
+}
+.listemenud li{
+    padding: 10px;
+    list-style: none;
+    color: #a09173!important;
+    
+}
+
+.listemenud li a{
+    padding: 10px;
+    list-style: none;
+    color: #a09173!important;
+    
+}
+.listemenud li a:hover{
+   
+    color: white!important;
+    
+}
+
+.listemenud li:hover{
+    background-color: #a09173;
+    color: white!important;
+}
+
+
+
+#datepicker{
+    z-index: 55;
+   
+}
+.container a{
+    color: #a09173;
+}
+
+.container a:hover{
+    color: white;
+}
+
+.containere > div{
+    position: absolute;
+   
+
+
+}
+
+.slider{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+
+.calendriercont{
+    top: 100px;
+    left: 100px;
+    background-color: white;
+    display: grid;
+    place-items: center;
+    position: relative;
+    width: 400px;
+    height: 400px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1),
+                inset 10px 10px 10px rgba(0, 0, 0, 1),
+                inset -10px -10px 10px rgba(255, 255, 255, 1);
+     border-radius: 20px;
+
+
+}
+
+#upload{
+    color: #a09173;
+    
+
+}
+
+/* le bouton paris londre */
+.wrappered{
+    display: flex;
+    position: fixed;
+    top: 40px;
+    right: 50px;
+    z-index: 15;
+  
+}
+
+#selectus{
+    display: flex;
+    text-align: start;
+    background-color: #1a1a1aa6;
+    color: #a09173;
+    width: 200px;
+    height: 50px;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+/* carte */
+
+.containercard{
+    
+    position: fixed;
+    bottom: 90px;
+    left: 300px;
+    height: 280px;
+    width: 700px;
+    background-color: #1a1a1a;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-bottom: 10px;
+    color: white;
+    z-index: 15;
+}
+
+.containercard h1{
+    font-size: 40px;
+    font-weight:900;
+    padding-bottom: 10px;
+    z-index: 15;
+}
+
+.containercard p{
+    font-size: 15px;
+    z-index: 15;
+}
+
+/* cartes */
+.cardus{
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    /* en dessous on indique les parametres de sa grille */
+    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+    gap: 20px;
+}
+
+.cardass{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1) ;
+}
+
+.cardus_image{
+    width: 100%;
+    display: block;
+}
+
+.cardus_content{
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background: white;
+}
+
+.cardus_content > p:first-of-type{
+    margin-top: 0;
+}
+
+.cardus_content > p:last-of-type{
+    margin-bottom: 0; 
+}
+
+.card_info{
+    padding:15px ;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    
+    font-size: 0.8em;
+    border-bottom: 5px solid #a09173;
+}
+
+.card_info i{
+    font-size: 0.9em;
+    margin-right: 8px;
+}
+
+.cardus_link{
+    color: #a09173 ;
+    text-decoration: none;
+}
+
+.cardus_link:hover{
+    text-decoration: underline;
+    color: #a09173;
+}
+
+.butonneded{
+    margin: 0 auto;
+    
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+.motflottantsolo{display: none;}
+.containere{display: none;}
+.containered{display: none;}
+.wrappered{display: none;}
+.containercard{display: none!important;}
+.socialus{
+    display: block;
+  
+}
+.footeurs{
+    display: block;
+   
+    text-align: center;
+}
+body{
+    min-width: 300px;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+.tailleliste{flex-direction: column;}
+.sidebar{
+    width: 100%;
+}
+.dessous{
+    justify-content: center;
+}
+.droite{
+    justify-content: center;
+}
+.containerfooterbasdroite{
+    display: block;
+    text-align: center;
+}
+.footer_side{
+text-align: center;
+
+}
+}
+
+
+@media screen and (min-width: 2560px) {
+    span{
+        font-size: 20px;
+    }
+    .sidebar ul li a{
+        
+        margin-top: 75px;
+        font-size: 20px;
+    }
+     .containercard{
+         bottom: 138px;
+     }
+
+     .angle{
+         margin-top: 0!important;
+     }
+
+     .social{
+         font-size: 40px;
+     }
+     #goldus{
+        font-size: 30px;
+     }
+     #momo{
+        font-size: 30px;
+     }
+     #meme{
+        font-size: 30px;
+     } 
+    .tailleliste span{
+        font-size: 30px; 
+     }
+     .list_name {
+         margin-top: -5px;
+         font-size: 25px;
+     }
+     .coco{
+         font-size: 20px;
+     }
+}
+
