@@ -24,7 +24,7 @@ if(isset($_POST['validate'])){
 
             $successMsg = "Votre Réservation à bien été publié sur le site !";
 
-            header('location: mes-menu.php');
+            header('location: index.php');
 
     }else{
             $errorMsg = "Veuillez compléter tous les champs";
