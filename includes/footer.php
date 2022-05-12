@@ -20,9 +20,8 @@
                     </li>
 
                     <li class="socialus">
-                    <a href="https://www.facebook.com/bustronome/" target="_blank" class="social"><i class='bx bxl-facebook' ></i></a>
-                    <a href="https://plus.google.com/u/0/+Bustronome-Voyage-Gourmand-Paris" target="_blank" class="social"><i class='bx bxl-google-plus' ></i></a>
-                    <a href="https://www.instagram.com/bustronomeparis/" target="_blank" class="social"><i class='bx bxl-instagram' ></i></a>
+                    <a href="https://www.facebook.com/nba" target="_blank" class="social"><i class='bx bxl-facebook' ></i></a>
+                    <a href="https://www.instagram.com/nba/" target="_blank" class="social"><i class='bx bxl-instagram' ></i></a>
                      </li>
 
                

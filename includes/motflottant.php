@@ -1,4 +1,4 @@
 <div class="motflottantsolo">
-        <h1>Un Restaurant original à bord d'un bus à impériale: vivez une expérience inédite !</h1>
+        <h1>Soyez au coeur des match NBA</h1>
       
     </div>
