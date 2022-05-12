@@ -50,6 +50,18 @@ require('actions/allmenuaction.php');
                           </div>
                   </div>
 
+                  <div class="cardass">
+                      <img src="./assets/hospitalité-VIP-nba-paris-game-2020-accorhotels-arena-courtside.jpeg" alt="" class="cardus_image">
+                          <div class="cardus_content">
+                            <p> Offre Loge VIP Premium </p>
+                            <p> Loge Magic Johnson </p>
+                            <p> Prix : 750 $</p>
+                          </div>
+                          <div class="card_info">
+                           
+                          </div>
+                  </div>
+
                  
 
                       
