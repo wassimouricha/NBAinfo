@@ -36,7 +36,7 @@
       
                  </div>
                  <div class="dessous">
-                    <span > Made with </span> <a href="#"  class="coco"> ♥ </a><span > by </span><a href="https://github.com/wassimouricha"   target="_blank" class="coco"> Wassim Bouricha. </a>
+                    <span > Made with by </span> <a href="https://github.com/wassimouricha"   target="_blank" class="coco"> Wassim Bouricha. </a>
                 </div>
                  
 

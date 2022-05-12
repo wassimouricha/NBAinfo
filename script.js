@@ -34,29 +34,29 @@ window.addEventListener("load", () =>
 
 function textchange(){
    setInterval(() =>{
-      changeH1.textContent = "DÉGUSTEZ DES METS RAFFINÉS";
-      changeH2.textContent = "Menu découverte de 4 plats pour le déjeuner et de 6 plats pour le dîner au format dégustation proposés avec une selection de vins et champagnes";
+      changeH1.textContent = "LES MEILLEURES PLACES";
+      changeH2.textContent = "Profitez des meilleures conditions possible lors des match";
   }, 5000);
 }
 
 function textchange2(){
    setInterval(() =>{
       changeH1.textContent = "PROFITEZ D’UNE VUE IMPRENABLE";
-      changeH2.textContent = "Grâce au toit entièrement vitré de ce bus à impériale, plongez dans l’univers parisien dans les meilleures conditions de confort, quelle que soit la saison.";
+      changeH2.textContent = "une expérience inoubliables ";
   }, 10000);
 }
 
 function textchange3(){
   setInterval(() =>{
-     changeH1.textContent = "SAVOUREZ UNE PAUSE BIEN ÊTRE";
-     changeH2.textContent = "BUSTRONOME : Agréable moyen de découvrir la cuisine et les vins d’une capitale culturelle tout en visitant les plus beaux monuments de Paris.";
+     changeH1.textContent = "SAVOUREZ DES METS RAFFINES";
+     changeH2.textContent = "les meilleurs traiteurs de tout les états units aux services du confort des fans NBA";
  }, 15000);
 }
 
 function textchange4(){
   setInterval(() =>{
-     changeH1.textContent = "Laissez vos sens vous transportez";
-     changeH2.textContent = " A bord du bustronome , les passagers découvrent les plus belles vues de Paris en profitant du meilleur de la gastronomie";
+     changeH1.textContent = "UNE EXPERIENCE UNIQUE";
+     changeH2.textContent = " Des souvenirs inoubliables ";
  }, 20000);
 }
 

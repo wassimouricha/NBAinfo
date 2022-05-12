@@ -80,7 +80,12 @@
             </a>
           
             </li>
+            <li class="solou">
+            <a href="allprofile.php" class="binks">
+                <span class="list_name"> Les profils </span>
+            </a>
 
+            </li>
       
         <?php
         } 
@@ -106,12 +111,7 @@
             </a>
           
             </li>
-            <li class="solou">
-            <a href="allprofile.php" class="binks">
-                <span class="list_name"> Les profils </span>
-            </a>
-
-            </li>
+           
             
             </li>
             <li class="solou" >
