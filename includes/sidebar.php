@@ -100,7 +100,7 @@
             </li>
        
             <li class="solou">
-            <a href="#" class="binks">
+            <a href="offres.php" class="binks">
                 <span class="list_name"> Les offres </span>
             </a>
      
