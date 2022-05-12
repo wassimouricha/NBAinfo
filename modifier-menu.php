@@ -52,6 +52,7 @@ require('actions/editmenuaction.php');
                          <label for="exampleInputEmail1" class="form-label">Veuillez selectionner une date :</label>
                          <input type="text"  name="date" id="datepicker"  value="<?= $titremenu; ?> " >    
                          </div>
+                   
 
                          <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Veuillez selectionner une heure :</label>
@@ -62,6 +63,19 @@ require('actions/editmenuaction.php');
                             <option  name="heure" value="19h45">19:45</option>
                             <option  name="heure" value="20h45">20:45</option>
                             <option  name="heure" value="21h30">21:30</option>
+                        </select>
+                
+                </div>
+
+                      
+                <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Veuillez selectionner un type de loge :</label>
+                    <select name="loge" id="selecthours">
+                            
+                            <option  name="rloge" value="Loge classique"><p>Loge classique</p></option>
+                            <option  name="rloge" value="Loge VIP"><p>Loge VIP</p></option>
+                            <option  name="rloge" value="Loge premium">Loge premium </option>
+                        
                         </select>
                 
                 </div>

@@ -25,6 +25,7 @@ if(isset($_GET['id'])  AND !empty($_GET['id'])){
             $contentmenu = $menuInfo['nom'];
             $imagemenu = $menuInfo['email'];
             $imageequipe = $menuInfo['equipe'];
+            $imageloge = $menuInfo['loge'];
             
             
 

@@ -48,6 +48,7 @@ require('actions/mesmenusaction.php');
                             <p> <?php echo $menus['nom'];  ?></p>
                             <p> <?php echo $menus['email'];  ?></p>
                             <p> <?php echo $menus['equipe'];  ?></p>
+                            <p> <?php echo $menus['loge'];  ?></p>
                           </div>
                           <div class="card_info">
                             <div>

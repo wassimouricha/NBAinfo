@@ -62,6 +62,18 @@
                 </div>
 
                 <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Veuillez selectionner un type de loge :</label>
+                    <select name="rloge" id="selecthours">
+                            
+                            <option  name="rloge" value="Loge classique"><p>Loge classique</p></option>
+                            <option  name="rloge" value="Loge VIP"><p>Loge VIP</p></option>
+                            <option  name="rloge" value="Loge premium">Loge premium </option>
+                        
+                        </select>
+                
+                </div>
+
+                <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Veuillez selectionner une équipe pour ces playoffs (match à domicile pour l'équipe choisis):</label>
                     <select name="rteam" id="selecthours">
                             
