@@ -74,7 +74,7 @@ color: white;
 
 .btn{
     color: black;
-    background-color: #a09173;
+    background-color: crimson;
 }
 
 .imagelogo{
@@ -130,7 +130,7 @@ margin-top: 20px;
 
 
 .angle{
-    color: #a09173;
+    color: crimson;
 
 }
 
@@ -182,7 +182,7 @@ margin-top: 20px;
 }
  .social :hover{
     opacity: 0.9;
-    color: #a09173;
+    color: crimson;
 }
 
 .footeurs ul{
@@ -200,15 +200,15 @@ flex-direction: row;
 
 .coco {
     text-decoration: none;
-    color: #a09173;
+    color: crimson;
 }
 
 #meme{
-    color: #a09173;
+    color: crimson;
 }
 
 #momo{
-    color: grey;
+    color: crimson;
 }
 
 .footeurs ul a{
@@ -360,7 +360,7 @@ z-index: 10;
 }
 
 .listemenud li:hover{
-    background-color: #a09173;
+    background-color: crimson;
     color: white!important;
 }
 
@@ -371,7 +371,7 @@ z-index: 10;
    
 }
 .container a{
-    color: #a09173;
+    color: crimson;
 }
 
 .container a:hover{
@@ -509,7 +509,7 @@ z-index: 10;
     background: white;
     
     font-size: 0.8em;
-    border-bottom: 5px solid #a09173;
+    border-bottom: 5px solid crimson;
 }
 
 .card_info i{
@@ -518,13 +518,13 @@ z-index: 10;
 }
 
 .cardus_link{
-    color: #a09173 ;
+    color: crimson ;
     text-decoration: none;
 }
 
 .cardus_link:hover{
     text-decoration: underline;
-    color: #a09173;
+    color: crimson;
 }
 
 .butonneded{
