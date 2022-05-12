@@ -27,7 +27,7 @@ require('actions/editmenuaction.php');
                 </ul>
                 <div class="titrecalend">
                   <h1 >
-                   Modifier un Menu
+                   Modifier une reservation
                   </h1>
                   
                 </div>
@@ -48,25 +48,55 @@ require('actions/editmenuaction.php');
 
                                     ?>
                                      <form class="container" method="POST" enctype="multipart/form-data"> <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
-                          <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">Titre du menu</label>
-                              <input type="text" class="form-control" name="title" value="<?= $titremenu; ?> ">
+                                     <div class="mb-3">
+                         <label for="exampleInputEmail1" class="form-label">Veuillez selectionner une date :</label>
+                         <input type="text"  name="date" id="datepicker"  value="<?= $titremenu; ?> " >    
+                         </div>
 
+                         <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Veuillez selectionner une heure :</label>
+                    <select name="heure" id="selecthours" >
+                   
+                            <option  name="heure" value="13h00"><p>13:00</p></option>
+                            <option  name="heure" value="15h00"><p>15:00</p></option>
+                            <option  name="heure" value="19h45">19:45</option>
+                            <option  name="heure" value="20h45">20:45</option>
+                            <option  name="heure" value="21h30">21:30</option>
+                        </select>
+                
+                </div>
+                          
+                          
+                          <div class="mb-3">
+                              <label for="exampleInputEmail1" class="form-label">nom</label>
+                              <textarea  class="form-control" name="nom" > <?= $contentmenu; ?></textarea>
                           </div>
                           <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">Description du menu </label>
-                              <textarea  class="form-control" name="descriptioned"> <?= $descriptionmenu; ?> </textarea>
+                              <label for="exampleInputEmail1" class="form-label">email</label>
+                              <textarea  class="form-control" name="email" > <?= $imagemenu; ?></textarea>
                           </div>
                           <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">Contenu du menu</label>
-                              <textarea  class="form-control" name="content" > <?= $contentmenu; ?></textarea>
-                          </div>
-                          <div class="mb-3">
-                          <label for="exampleInputEmail1" class="form-label" >Choisissez votre photo</label>
-                          <br>
-                            <input type="file"  name="bin" id="upload">
-                          </div>
-
+                <label for="exampleInputEmail1" class="form-label">"Veuillez selectionner une équipe pour ces playoffs (match à domicile pour l'équipe choisis):"</label>
+                    <select name="equipe" id="selecthours">
+                       
+                            <option  name="equipe" value="Heat"><p>Heat</p></option>
+                            <option  name="equipe" value="Bucks"><p>Bucks</p></option>
+                            <option  name="equipe" value="Celtics">Celtics</option>
+                            <option  name="equipe" value="76ers">76ers</option>
+                            <option  name="equipe" value="Raptors">Raptors</option>
+                            <option  name="equipe" value="Cavaliers">Cavaliers</option>
+                            <option  name="equipe" value="Nets">Nets</option>
+                            <option  name="equipe" value="Grizzlies">Grizzlies</option>
+                            <option  name="equipe" value="Warriors">Warriors</option>
+                            <option  name="equipe" value="Mavericks">Mavericks</option>
+                            <option  name="equipe" value="Jazz">Jazz</option>
+                            <option  name="equipe" value="Nuggets">Nuggets</option>
+                            <option  name="equipe" value="Timberwolves">Timberwolves</option>
+                            <option  name="equipe" value="Clippers">Clippers</option>
+                     
+                        </select>
+                
+                </div>
                   
                           <button type="submit" class="btn btn-dark" name="validate" id="upload">Modifier</button>
                      

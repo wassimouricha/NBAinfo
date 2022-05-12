@@ -4,4 +4,4 @@
 
 require('actions/database.php');
 
-$getAllTheBooked = $bdd->query('SELECT id, date, heure, nom, email FROM booking  ORDER BY id DESC');
+$getAllTheBooked = $bdd->query('SELECT id, date, heure, nom, email,equipe FROM booking  ORDER BY id DESC');

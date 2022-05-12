@@ -7,7 +7,7 @@
         <ul class="nav">
            
         <?php 
-        if(!isset($_SESSION['auth'])){
+        if(!isset($_SESSION['auth']) && !isset($_SESSION['mdp']) ){
           ?>
         <li class="solou">
         <a href="login.php"  class="binks">
@@ -19,7 +19,7 @@
         } 
           ?>
           <?php 
-        if(isset($_SESSION['auth'])){
+        if(isset($_SESSION['auth']) ){
           ?>
 
         <li class="solou">
@@ -37,7 +37,7 @@
 
         <li class="solou">
         <a href=" mes-menu.php"  class="binks">
-            <span class="list_name" > Mes menus </span>
+            <span class="list_name" > Mes réservations </span>
         </a>
     
         </li>
@@ -52,20 +52,27 @@
         <?php
         } 
           ?>
+          <!-- Si le profil admin n'est pas connecté et  le profil user est  connecté alors ça affiche la liste en dessous dans la sidebar -->
            <?php 
-        if(!isset($_SESSION['mdp'])){
+        if(!isset($_SESSION['mdp']) && isset($_SESSION['auth'])){
           ?>
-        <li class="solou">
-        <a href="loginadmin.php"  class="binks">
-            <span class="list_name" ><i class='bx bx-star'></i> Connexion Admin <i class='bx bx-star'></i></span>
-        </a>
-    
-        </li>
+     
+     <!-- Si le profil admin et le profil user est pas connecté alors ça affiche la liste en dessous dans la sidebar -->
         <?php
         } 
+        if(!isset($_SESSION['mdp']) && !isset($_SESSION['auth'])){
+            ?>
+          <li class="solou">
+          <a href="loginadmin.php"  class="binks">
+              <span class="list_name" ><i class='bx bx-star'></i> Connexion Admin <i class='bx bx-star'></i></span>
+          </a>
+      
+          </li>
+          <?php
+          }
           ?>
           <?php 
-        if(isset($_SESSION['mdp'])){
+        if(isset($_SESSION['mdp']) && !isset($_SESSION['auth'])){
           ?>
 
         <li class="solou">

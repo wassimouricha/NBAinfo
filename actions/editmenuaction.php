@@ -6,21 +6,28 @@ require('actions/database.php');
 
 if(isset($_POST['validate'])){
 
-    if(!empty($_POST['title']) AND !empty($_POST['descriptioned']) AND !empty($_POST['content']) ){
+    if(!empty($_POST['date']) AND !empty($_POST['heure']) AND !empty($_POST['nom']) AND !empty($_POST['email'])  AND !empty($_POST['equipe'])){
 
-        $newmenutitle = htmlspecialchars($_POST['title']);
-        $newmenudescriptioned = htmlspecialchars($_POST['descriptioned']);
-        $newmenucontent = htmlspecialchars($_POST['content']);
-        $newmenuimage = file_get_contents($_FILES['bin']['tmp_name']);
+        $newmenutitle = htmlspecialchars($_POST['date']);
+        $newmenudescriptioned = htmlspecialchars($_POST['heure']);
+        $newmenucontent = htmlspecialchars($_POST['nom']);
+        $newmenuemail = htmlspecialchars($_POST['email']);
+        $newmenuequipe = htmlspecialchars($_POST['equipe']);
+        // $newmenuimage = file_get_contents($_FILES['bin']['tmp_name']);
 
             //update est une requete permettant de mettre à jour des informations dans notre table
             //ici on lui dit de mettre a jour la table menu , il va mettre à jour le titre, le description et le contenu du menu qui possede l'id soit donc un id existant déjà dans la table menu
-        $editmenu = $bdd->prepare('UPDATE menu SET titre = ?, descriptioned = ?, content = ?, bin = ? WHERE id = ?');
+        $editmenu = $bdd->prepare('UPDATE booking SET date = ?, heure = ?, nom = ?, email = ?, equipe = ? WHERE id = ?');
         //on execute la requete qui dans un tableau va venir récuperer le $_GET['id'] (ou ici la variable $idofmenu) soit donc la variable id 
-        $editmenu->execute(array($newmenutitle, $newmenudescriptioned, $newmenucontent, $newmenuimage, $_GET['id']));
+        $editmenu->execute(array($newmenutitle, $newmenudescriptioned, $newmenucontent, $newmenuemail, $newmenuequipe,  $_GET['id']));
 
-        header('Location: mes-menu.php');
-
+        //si la session est connecté alors une fois modifier il va rediriger vers les menu de l'id du compte qui est connecté 
+        if(isset($_SESSION['id'])){
+            header('Location: mes-menu.php');
+        }else{
+            header('Location: booked.php');
+        }
+        
 
     }else{
         $errorMsg = "Veuillez compléter tout les champs" ;

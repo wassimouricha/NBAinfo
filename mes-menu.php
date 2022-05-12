@@ -29,37 +29,25 @@ require('actions/mesmenusaction.php');
                 </ul>
                 <div class="titrecalend">
                   <h1 >
-                    Voici mes Menus
+                    Voici mes reservations
                   </h1>
                   
                 </div>
                 <!-- mon tableau de carte -->
                 <div class="cardus">
-                  <div class="cardass">
-                      <img src="./assets/coquille.jpg" alt="" class="cardus_image">
-                          <div class="cardus_content">
-                            <p> Coquille saint jacques miam</p>
-                            <p> Doubles dose de  miam</p>
-                          </div>
-                          <div class="card_info">
-                            <div>
-                               <box-icon type='solid' name='like'></box-icon> 310
-                            </div>
-                            <div>
-                              <a href="./" class="cardus_link"> Miam</a>
-                            </div>
-                          </div>
-                  </div>
+                  
                
                   <?php 
                         while($menus = $getAllTheMenu->fetch()){
                             ?>
                              <div class="cardass">
-                      <?= '<img class="cardus_image" src="data:image/png|image/jpeg|image/gif|image/jpg;base64,' . base64_encode( $menus['bin'] ) . '" />'; ?>
+                     
                           <div class="cardus_content">
-                            <p> <?php echo $menus['titre'];  ?>  </p>
-                            <p> <?php echo $menus['descriptioned'];  ?></p>
-                            <p> <?php echo $menus['content'];  ?></p>
+                            <p> <?php echo $menus['date'];  ?>  </p>
+                            <p> <?php echo $menus['heure'];  ?></p>
+                            <p> <?php echo $menus['nom'];  ?></p>
+                            <p> <?php echo $menus['email'];  ?></p>
+                            <p> <?php echo $menus['equipe'];  ?></p>
                           </div>
                           <div class="card_info">
                             <div>
@@ -83,7 +71,7 @@ require('actions/mesmenusaction.php');
                 <br>
                 <div class="butonneded" >
 
-<a href="./ajoutdemenu.php" class="btn btn-dark" >Ajouter un menu</a>
+<a href="./reservation.php" class="btn btn-dark" >Ajouter une reservation</a>
 
 </div>
                                         

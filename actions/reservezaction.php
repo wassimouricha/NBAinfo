@@ -19,8 +19,8 @@ if(isset($_POST['validate'])){
        
        
 
-        $insertQuestionOnWebsite = $bdd->prepare('INSERT INTO booking(date, heure, nom, email, equipe )VALUES(?, ?, ?, ?, ? )');
-        $insertQuestionOnWebsite->execute(array( $res_date,   $res_hours,  $res_name,  $res_mail, $res_team ));
+        $insertQuestionOnWebsite = $bdd->prepare('INSERT INTO booking(date, heure, nom, email, equipe, id_auteur )VALUES(?, ?, ?, ?, ?, ? )');
+        $insertQuestionOnWebsite->execute(array( $res_date,   $res_hours,  $res_name,  $res_mail, $res_team, $_SESSION['id'] ));
 
             $successMsg = "Votre Réservation à bien été publié sur le site !";
 
