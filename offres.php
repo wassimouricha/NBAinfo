@@ -34,9 +34,7 @@ require('actions/allmenuaction.php');
                             <p> Loge classique premier prix </p>
                             <p> Prix : 90 $</p>
                           </div>
-                          <div class="card_info">
-                           
-                          </div>
+                         
                   </div>
                   <div class="cardass">
                       <img src="./assets/FTG-NBAMostPoshPrivateClubs-BarclaysCenter-CreditBruceDamote.jpg" alt="" class="cardus_image">
@@ -45,21 +43,21 @@ require('actions/allmenuaction.php');
                             <p> Loge VIP Classieuse </p>
                             <p> Prix : 350 $</p>
                           </div>
-                          <div class="card_info">
-                           
-                          </div>
+                          
                   </div>
 
-                  <div class="cardass">
-                      <img src="./assets/hospitalité-VIP-nba-paris-game-2020-accorhotels-arena-courtside.jpeg" alt="" class="cardus_image">
-                          <div class="cardus_content">
+                  <div class="cardmorph">
+                  <div class="cardmorph_content">
+                    <div class="cardmorph_picture">
+                    <img src="./assets/hospitalité-VIP-nba-paris-game-2020-accorhotels-arena-courtside.jpeg" alt="" >
+                    </div>
+                      
+                        
                             <p> Offre Loge VIP Premium </p>
                             <p> Loge Magic Johnson </p>
                             <p> Prix : 750 $</p>
                           </div>
-                          <div class="card_info">
-                           
-                          </div>
+                         
                   </div>
 
                  
