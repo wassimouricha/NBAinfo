@@ -26,36 +26,55 @@ require('actions/allmenuaction.php');
                   
                 </div>
                 <!-- mon tableau de carte -->
-                <div class="cardus">
-                <div class="cardass">
-                      <img src="./assets/loges-chase-center.jpg" alt="" class="cardus_image">
-                          <div class="cardus_content">
-                            <p> Offre Loge classique</p>
-                            <p> Loge classique premier prix </p>
-                            <p> Prix : 90 $</p>
+                <div class="cardus2">
+             
+
+                  <div class="cardmorph">
+                  <div class="cardmorph_content">
+                    <div class="cardmorph_picture">
+                    <img src="./assets/loges-chase-center.jpg" alt="" >
+                    </div>
+                    <div class="cardmorph_picture2">
+                    <img src="./assets/Blue_circle_frame.png" alt="" >
+                    </div>
+                      
+                        <br>
+                        <p class="colorcardtext"> Offre Loge classique</p>
+                            <p class="colorcardtext"> Loge classique premier prix </p>
+                            <p class="colorcardtext"> Prix : 90 $</p>
+                        
                           </div>
                          
                   </div>
-                  <div class="cardass">
-                      <img src="./assets/FTG-NBAMostPoshPrivateClubs-BarclaysCenter-CreditBruceDamote.jpg" alt="" class="cardus_image">
-                          <div class="cardus_content">
-                            <p> Offre Loge VIP</p>
-                            <p> Loge VIP Classieuse </p>
-                            <p> Prix : 350 $</p>
+                  <div class="cardmorph">
+                  <div class="cardmorph_content">
+                    <div class="cardmorph_picture">
+                    <img src="./assets/FTG-NBAMostPoshPrivateClubs-BarclaysCenter-CreditBruceDamote.jpg" alt="" >
+                    </div>
+                    <div class="cardmorph_picture3">
+                    <img src="./assets/white-circle.png" alt="" >
+                    </div>
+                      
+                        <br>
+                        <p class="colorcardtext"> Offre Loge VIP</p>
+                            <p class="colorcardtext"> Loge VIP Classieuse </p>
+                            <p class="colorcardtext"> Prix : 350 $</p>
                           </div>
-                          
+                         
                   </div>
-
                   <div class="cardmorph">
                   <div class="cardmorph_content">
                     <div class="cardmorph_picture">
                     <img src="./assets/hospitalité-VIP-nba-paris-game-2020-accorhotels-arena-courtside.jpeg" alt="" >
                     </div>
+                    <div class="cardmorph_picture2">
+                    <img src="./assets/circle-41674.png" alt="" >
+                    </div>
                       
-                        
-                            <p> Offre Loge VIP Premium </p>
-                            <p> Loge Magic Johnson </p>
-                            <p> Prix : 750 $</p>
+                        <br>
+                            <p class="colorcardtext"> Offre Loge VIP Premium </p>
+                            <p class="colorcardtext"> Loge Magic Johnson </p>
+                            <p class="colorcardtext"> Prix : 750 $</p>
                           </div>
                          
                   </div>
