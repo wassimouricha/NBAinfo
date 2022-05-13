@@ -328,6 +328,21 @@ z-index: 10;
    overflow-y: scroll;
 }
 
+.containered2{
+  
+    display: flex;
+    position: fixed;
+    left: 280px;
+    top: 0;
+     height: 93%;
+    width: 100%; 
+    z-index: 10;
+    transition: ease-in-out;
+    flex-direction: column;
+   background:  no-repeat center url(./assets/4765949.jpg);
+   overflow-y: scroll;
+}
+
 .containered ul li {
     color: white;
 }
@@ -460,7 +475,8 @@ z-index: 10;
 }
 
  .colorcardtext {
-color: white;
+color: black;
+font-weight: 800;
 }
 
 .cardmorph .cardmorph_content .cardmorph_picture {

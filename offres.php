@@ -17,7 +17,7 @@ require('actions/allmenuaction.php');
             <!-- sidebar -->
             <?php include 'includes/sidebar.php' ; ?>
            
-            <div class="containered">
+            <div class="containered2">
                
                 <div class="titrecalend">
                   <h1 >
