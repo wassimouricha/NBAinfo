@@ -49,6 +49,7 @@ require('actions/showallbooked.php');
                             <p> Heure :  <?php echo $booked['heure'];  ?></p>
                             <p> Nom : <?php echo $booked['nom'];  ?></p>
                             <p> E-mail : <?php echo $booked['email'];  ?></p>
+                            <p> Type : <?php echo $booked['loge'];  ?></p>
                           </div>
                           <div class="card_info">
                           
