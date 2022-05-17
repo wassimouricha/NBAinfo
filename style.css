@@ -43,12 +43,25 @@ body, input{
   
 }
 
+
+
 .containerloginform{
     position: absolute;
     width: 100%;
     min-height: 100vh;
     background-color: #fff;
     overflow: hidden;
+
+}
+
+.containerloginform::before{
+    content: '';
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background: linear-gradient(-45deg, crimson, crimson);
+
 }
 
 .form-container{
@@ -66,6 +79,21 @@ form{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 0 5rem;
+    overflow: hidden;
+    grid-column:  1 / 2;
+    grid-row:  1 / 2 ;
+    top: -10%;
+    right: 48%;
+ 
+}
+
+form .sign-in-form{
+    z-index: 2;
+}
+
+form .sign-up-form{
+    z-index: 2;
 }
 
 .titreformulaire{
@@ -102,6 +130,7 @@ form{
     font-weight: 600;
     font-size: 1.1rem;
     color: #333;
+    border-radius: 55px;
 }
 
 .input-field input ::placeholder {
@@ -132,12 +161,17 @@ form{
 .signin-signup{
     position: absolute;
     top: 40%;
-    left: 45%;
+    left: 60%;
     transform: translate(-50%, -50%);
     width: 50%;
     display: grid;
+    grid-template-columns: 1fr;
 }
 
+
+.imageform{
+    width: 100%;
+}
 
 /* Sidebar */
 .solou{
@@ -774,7 +808,12 @@ font-weight: 800;
     left: 0;
 }
 .containered{
+    position: relative;
     left: 0;
+    }
+    .containered2{
+        position: relative;
+        left: 0;
     }
 .wrappered{
     
@@ -845,7 +884,9 @@ text-align: center;
     .containereform{
         height: 700px!important;
     }
-    
+    .containered2{
+        height: 700px!important;
+    }
     
 }
 
@@ -876,6 +917,9 @@ text-align: center;
             height: 900px;
         }
         
+        .containered2{
+            height: 900px;
+        }
       
         
 }

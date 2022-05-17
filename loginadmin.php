@@ -38,13 +38,13 @@ if(isset($errorMsg)){echo '<p class="messagus">'.$errorMsg.'</p>'; }  ?>
                                             <i class="fas fa-lock"></i>
                                             <input type="password" placeholder="Mot de passe" name="mdp">
                                         </div>
-                                        <button type="submit" class="btnform" name="validate">Connexion admin </button>
+                                        <button type="submit" class="btnform" name="validate">Connexion</button>
                                     
                                     </form>
                                 </div>
                             </div>
                             <div class="panels-container">
-
+                              
 
                         </div>
 
