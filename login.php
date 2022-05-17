@@ -51,7 +51,9 @@
                         <i class="fas fa-lock"></i>
                         <input type="password" placeholder="Mot de passe" name="password">
                     </div>
-                    <button type="submit" class="btn btn-dark" name="validate">Se connecter</button>
+                    <button type="submit" class="btnform" name="validate">Se connecter</button>
+                    <br><br>
+                    <a href="page_de_connexion.php"><p >pas de compte ? Inscrivez-vous !</p></a>
                 </form>
             </div>
         </div>
