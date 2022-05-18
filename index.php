@@ -18,9 +18,9 @@
             <!-- automatic carousel slider -->
             <?php include 'includes/carouselslider.php' ; ?>
             <!-- Boutton dropped down  -->
-            <?php include 'includes/buttondropped.php' ; ?>
+        
             <!-- Bulle card text -->
-            <?php include 'includes/cardtext.php' ; ?>
+         
             <!-- footer -->
             <?php include 'includes/footer.php' ; ?>
 

@@ -8,18 +8,28 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
+    outline: none;
+    border: none;
+    text-decoration: none;
+
 
   
 }
 
 
 body{
-    color: white;
+    color: black;
     position: relative;
     height: 100vh;
     width: 100vw;
     overflow-x: hidden;
     overflow-y: hidden;
+
+}
+
+.main{
+
+    background-color: black;
 }
 
 /* Login and signup form */
@@ -296,6 +306,92 @@ margin-top: 20px;
   margin-top: 20px;
 }
 
+/* Sidebar V2 */
+
+
+nav{
+    position: absolute;
+    z-index: 55;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    background: #fff;
+    width: 90px;
+    overflow: hidden;
+    transition: width 0.2s linear ;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    overflow:auto;
+   
+}
+/* cacher la barre de scroll */
+.nav::-webkit-scrollbar {
+    display: none;
+  }
+
+.nbalogo{
+   
+    text-align: center;
+    display: flex;
+    transition: all 0.5s ease;
+  
+}
+
+.nbalogo img{
+    width: 65px;
+    height: 45px;
+}
+
+nav ul{
+
+    padding-left: 0;
+}
+
+a{
+    position: relative;
+    color: rgb(85, 83, 83);
+    font-size: 14px;
+    display: table;
+    width: 300px;
+    padding: 10px;
+
+}
+
+a:hover{
+    background: #eee;
+}
+
+nav:hover{
+    width: 280px;
+    transition: all 0.5s ease;
+}
+
+.fas{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    top: 14px;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+.nav-item{
+    position: relative;
+    top: 12px;
+    margin-left: 10px;
+}
+
+nav ul li {
+    list-style: none;
+    text-decoration: none;
+    margin: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    outline: none;
+}
 
 /* footer */
 
@@ -303,12 +399,12 @@ margin-top: 20px;
     color: midnightblue;
 }
 .footeurs{
-   
+    bottom: 0;
     padding: 20px 0;
     background-color: black;
     display: flex;
     flex-direction: row;
-    position: relative;
+    position: absolute;
     z-index: 10;
     
 
@@ -453,9 +549,9 @@ z-index: 10;
   
     display: flex;
     position: fixed;
-    left: 280px;
+    left: 0;
     top: 0;
-     height: 93%;
+     height: 100%;
     width: 100%; 
     z-index: 10;
     transition: ease-in-out;
@@ -793,8 +889,8 @@ font-weight: 800;
 
 @media screen and (max-width: 768px) {
 .motflottantsolo{
-    top: 800px;
-    left: 0;
+    top: 500px;
+    left: 100px;
 }
 .containere{
     position: relative;
@@ -815,26 +911,8 @@ font-weight: 800;
         position: relative;
         left: 0;
     }
-.wrappered{
-    
-    position: absolute;
-    top: 750px;
-}
-.containercard{
-    left: 10px;
-    position: absolute;
-    top: 1305px;
-    width: 500px;
-}
-.socialus{
-    display: block;
-  
-}
-.footeurs{
-    display: block;
-   
-    text-align: center;
-}
+
+
 body{
     min-width: 300px;
     overflow-y: visible;
@@ -854,10 +932,7 @@ body{
     display: block;
     text-align: center;
 }
-.footer_side{
-text-align: center;
 
-}
 
 
 
@@ -873,20 +948,8 @@ text-align: center;
         top: 1205px;
     }
 
-    .containercard h1{
-        font-size: 10px;
-    }
-
-    .containere{
-        height: 700px!important;
-    }
-
-    .containereform{
-        height: 700px!important;
-    }
-    .containered2{
-        height: 700px!important;
-    }
+  
+  
     
 }
 
@@ -904,22 +967,9 @@ text-align: center;
         }
 
         body{
-            overflow-y: scroll;
+            overflow-y: hidden;
         }
-        .sidebar{
-            height: 741px;
-        }
-        .containere{
-            height: 900px;
-        }
-
-        .containereform{
-            height: 900px;
-        }
-        
-        .containered2{
-            height: 900px;
-        }
+    
       
         
 }

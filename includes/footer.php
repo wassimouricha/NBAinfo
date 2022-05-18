@@ -1,4 +1,4 @@
- <!-- footer -->
+ <!-- footer
  <section class="pupo">
         <div id="progress-bar"></div>  
     </section>
@@ -46,4 +46,4 @@
 
            
         </section>
-    
+     -->
