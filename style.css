@@ -701,14 +701,7 @@ z-index: 10;
 }
 
 /* le bouton paris londre */
-.wrappered{
-    display: flex;
-    position: fixed;
-    top: 40px;
-    right: 50px;
-    z-index: 15;
-  
-}
+
 
 #selectus{
     display: flex;
@@ -800,33 +793,8 @@ font-weight: 800;
     height: 100%;
    }
 
-.containercard{
-    
-    position: fixed;
-    bottom: 152px;
-    left: 300px;
-    height: 280px;
-    width: 700px;
-    background-color: black;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
-    padding-bottom: 10px;
-    color: white;
-    z-index: 15;
-}
 
-.containercard h1{
-    font-size: 40px;
-    font-weight:900;
-    padding-bottom: 10px;
-    z-index: 15;
-}
 
-.containercard p{
-    font-size: 15px;
-    z-index: 15;
-}
 
 /* cartes */
 .cardus{
@@ -949,10 +917,6 @@ body{
 .droite{
     justify-content: center;
 }
-.containerfooterbasdroite{
-    display: block;
-    text-align: center;
-}
 
 
 
@@ -961,13 +925,7 @@ body{
 
 @media screen and (max-width: 521px){
  
-    .containercard{
-        
-        position: absolute;
-        height: 220px;
-        width: 300px;
-        top: 1205px;
-    }
+   
 
   
   
@@ -1027,26 +985,14 @@ body{
         
         font-size: 20px;
     }
-     .containercard{
-         bottom: 138px;
-     }
+   
 
      .angle{
          margin-top: 0!important;
      }
 
-     .social{
-         font-size: 40px;
-     }
-     #goldus{
-        font-size: 30px;
-     }
-     #momo{
-        font-size: 30px;
-     }
-     #meme{
-        font-size: 30px;
-     } 
+    
+     
     .tailleliste span{
         font-size: 30px; 
      }

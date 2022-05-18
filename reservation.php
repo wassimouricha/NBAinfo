@@ -42,7 +42,8 @@
 
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="date" name="rdate">
+                        <!-- j'indique  que dans l'input je veux le type date ce qui va pouvoir importer le datepicker , je donne le nom de la donnée récupéré puis j'indique min et max afin d'avoir le format dd/mm/yyyy -->
+                        <input type="date" placeholder="date" name="rdate"  min="1997-01-01" max="2030-12-31">  
                     </div>
 
                 
