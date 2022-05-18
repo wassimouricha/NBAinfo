@@ -22,11 +22,7 @@ require('actions/mesmenusaction.php');
             <?php include 'includes/sidebar.php' ; ?>
            
             <div class="containered">
-                <ul class="listemenud">
-                 <li> <a href="reservation.php"> <i class="fa-solid fa-calendar"> <span> Date & Heure </span>  </i></a>  </li>
-                 <li> <a href="menu.php"> <i class="fa-solid fa-calendar"> <span> Menu </span>  </i></a>  </li>
-                 <li> <i class="fa-solid fa-calendar"> <span> Option </span>  </i> </li>
-                </ul>
+             
                 <div class="titrecalend">
                   <h1 >
                     Voici mes reservations
@@ -51,9 +47,7 @@ require('actions/mesmenusaction.php');
                             <p> <?php echo $menus['loge'];  ?></p>
                           </div>
                           <div class="card_info">
-                            <div>
-                               <box-icon type='solid' name='like'></box-icon> 310
-                            </div>
+                        
                             <div>
                               <a href="modifier-menu.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Modifier</a>
                               <a href="actions/supprimermenuaction.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Supprimer</a>
