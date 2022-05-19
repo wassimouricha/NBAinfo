@@ -17,8 +17,8 @@
             <?php include 'includes/motflottant.php' ; ?>
             <!-- automatic carousel slider -->
             <?php include 'includes/carouselslider.php' ; ?>
-            <!-- Boutton dropped down  -->
-        
+            <!-- deuxieme container de la homepage  -->
+            <?php include 'includes/containerhome.php' ; ?>
             <!-- Bulle card text -->
          
             <!-- footer -->

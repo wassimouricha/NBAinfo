@@ -35,11 +35,11 @@ if(isset($errorMsg)){echo '<p class="messagus">'.$errorMsg.'</p>'; }  ?>
                     <input type="text" placeholder="Pseudo" name="pseudo">
                 </div>
                 <div class="input-field">
-                    <i class="fas fa-lock"></i>
+                    <i class="fas fa-user"></i>
                     <input type="text" placeholder="Nom" name="lastname">
                 </div>
                 <div class="input-field">
-                    <i class="fas fa-lock"></i>
+                    <i class="fas fa-user"></i>
                     <input type="text" placeholder="Prénom" name="firstname">
                 </div>
                 <div class="input-field">
@@ -55,7 +55,6 @@ if(isset($errorMsg)){echo '<p class="messagus">'.$errorMsg.'</p>'; }  ?>
                 
 
                 <button type="submit" class="btnform" name="validate">S'inscrire</button>
-                <br><br>
                 <a href="login.php"><p >déjà un compte ? Connectez-vous !</p></a>
             </form>
         </div>

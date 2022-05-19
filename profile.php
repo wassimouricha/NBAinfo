@@ -21,12 +21,7 @@ require('actions/showoneuserprofilaction.php');
             <?php include 'includes/sidebar.php' ; ?>
            
             <div class="containered">
-                
-                <ul class="listemenud">
-                 <li> <a href="profile.php"> <i class="fa-solid fa-calendar"> <span> Mon Profil </span>  </i></a>  </li>
-               
-                </ul>
-              
+         
                 <div class="titrecalend">
                   <h1 >
                     Voici Mon Profil

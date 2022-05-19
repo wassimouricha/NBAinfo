@@ -1,4 +1,4 @@
-$(".containere > div:gt(0)").hide();  //script permettant l'animation des fades pour mes slides
+$(".containere > div:gt(0)").hide();  //script permettant l'animation des fades pour mes slides Jquery
 
 
 setInterval(function() { 

@@ -65,7 +65,7 @@ require('actions/allmenuaction.php');
                   <div class="cardmorph">
                   <div class="cardmorph_content">
                     <div class="cardmorph_picture">
-                    <img src="./assets/hospitalité-VIP-nba-paris-game-2020-accorhotels-arena-courtside.jpeg" alt="" >
+                    <img src="./assets/FTG-NBAMostPoshPrivateClubs-BarclaysCenter-CreditBruceDamote.jpg" alt="" >
                     </div>
                     <div class="cardmorph_picture2">
                     <img src="./assets/circle-41674.png" alt="" >
