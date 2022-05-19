@@ -40,7 +40,7 @@
                 </a>
             </li>
             <li>
-                <a href="mes-menu.php">
+                <a href="mes-reservations.php">
                 <i class="fas fa-user"></i>
                     <span class="nav-item"> Mes réservations </span>
                 </a>
