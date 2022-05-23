@@ -29,7 +29,7 @@ if(isset($_POST['validate'])){
         //il prend deux parametres le champs de base de donnée password et ensuite le type de cryptage
 
             //verifier si l'utilisateur existe déjà
-        $checkIfUserAlreadyExists = $bdd ->prepare('SELECT pseudo FROM users WHERE pseudo = ?');  // je ais une requete sql pour récuperer les données qui se trouve dans la table
+        $checkIfUserAlreadyExists = $bdd ->prepare('SELECT pseudo FROM users WHERE pseudo = ?');  // je fais une requete sql pour récuperer les données qui se trouve dans la table
         // je déclare donc ici que je veux récuperer toutes les données (avec l'étoile *) ou le pseudo dans la base de données users qui possède déjà le pseudo en questions 
         $checkIfUserAlreadyExists->execute(array($user_pseudo));
 

@@ -59,7 +59,7 @@
         } 
           ?>
 
- <!-- Si le profil admin n'est pas connecté et  le profil user est  connecté alors ça affiche la liste en dessous dans la sidebar -->
+ <!-- Si le profil admin nest pas connecté et  le profil user est  connecté alors ça affiche la liste en dessous dans la sidebar -->
  <?php 
         if(!isset($_SESSION['mdp']) && isset($_SESSION['auth'])){
           ?>
