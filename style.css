@@ -27,9 +27,7 @@ body{
 
 }
 
-body::-webkit-scrollbar {
-    display: none; /* for Chrome, Safari, and Opera */
-  }
+
 
 .main{
 
@@ -107,7 +105,7 @@ form{
  
 }
 
-/*bootstrap modified */
+/*bootstrap style */
 .mb-3{
     text-align: center;
     line-height: 1;
@@ -228,6 +226,29 @@ form .sign-up-form{
     margin-top: 5px;
 }
 
+.TextFlottant{
+    top: 350px;
+    left: 900px;
+    position: absolute;
+    z-index: 100;
+    width: 400px;
+    height: 400px;
+}
+
+.TextFlottant h1{
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.TextFlottant > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
+  }
+
 .sidebar{
     display: flex;
     flex-direction: column;
@@ -335,14 +356,16 @@ nav{
     left: 0;
     background: #fff;
     width: 90px;
-    overflow: hidden;
     transition: width 0.2s linear ;
     box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
     overflow-y:auto;
-    scrollbar-width: none;
+    
    
 }
 /* cacher la barre de scroll */
+nav::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+  }
 
 
 .nbalogo{
@@ -935,8 +958,20 @@ font-weight: 800;
 
 @media screen and (max-width: 768px) {
 .motflottantsolo{
-    top: 500px;
+    top: 10px;
     left: 100px;
+}
+.TextFlottant{
+    top: 280px;
+    left: 352px;
+    position: absolute;
+    z-index: 100;
+    width: 200px;
+    height: 300px;
+}
+
+.TextFlottant h1{
+    font-size: 17px;
 }
 .containere{
     position: relative;
@@ -957,6 +992,35 @@ font-weight: 800;
         position: relative;
         left: 0;
     }
+    .containeregris{
+        display: flex;
+        position: fixed;
+        left: 0;
+        top: 0;
+         height: 100%;
+        width: 100%; 
+        z-index: 12;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+    
+    .containerbeforus ::before{
+        z-index: -5;
+        content: '';
+        position: absolute;
+        width: 2000px;
+        height: 2000px;
+        left: 10px;
+        top: 20px;
+        
+    }
+    .lottiehome{
+        margin-left: 508px;
+        margin-top: 159px;
+    }
+    
 
 
 body{

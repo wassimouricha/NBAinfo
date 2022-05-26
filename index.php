@@ -17,10 +17,10 @@
             <?php include 'includes/motflottant.php' ; ?>
             <!-- automatic carousel slider -->
             <?php include 'includes/carouselslider.php' ; ?>
+            <!-- TextSlider  -->
+            <?php include 'includes/textslider.php' ; ?>
             <!-- deuxieme container de la homepage  -->
             <?php include 'includes/containerhome.php' ; ?>
-            <!-- Bulle card text -->
-         
             <!-- footer -->
             <?php include 'includes/footer.php' ; ?>
 
