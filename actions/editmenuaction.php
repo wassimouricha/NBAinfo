@@ -24,7 +24,7 @@ if(isset($_POST['validate'])){
 
         //si la session est connecté alors une fois modifier il va rediriger vers les menu de l'id du compte qui est connecté 
         if(isset($_SESSION['id'])){
-            header('Location: mes-menu.php');
+            header('Location: mes-reservations.php');
         }else{
             header('Location: booked.php');
         }

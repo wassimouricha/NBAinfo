@@ -49,7 +49,7 @@ require('actions/mesmenusaction.php');
                           <div class="card_info">
                         
                             <div>
-                              <a href="modifier-menu.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Modifier</a>
+                              <a href="modifier-reservation.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Modifier</a>
                               <a href="actions/supprimermenuaction.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Supprimer</a>
                             </div>
                           </div>
