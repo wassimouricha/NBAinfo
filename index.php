@@ -21,8 +21,7 @@
             <?php include 'includes/textslider.php' ; ?>
             <!-- deuxieme container de la homepage  -->
             <?php include 'includes/containerhome.php' ; ?>
-            <!-- footer -->
-            <?php include 'includes/footer.php' ; ?>
+
 
     <!-- Script -->
       <script src="./script.js"></script>

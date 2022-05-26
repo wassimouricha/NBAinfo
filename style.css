@@ -955,8 +955,161 @@ font-weight: 800;
 
 
 /* media queries */
+@media screen and (min-width: 2560px)  {
+    .lottiehome{
+        margin-left: 2250px;
+        margin-top: 1300px;
+    }
+    .containerbeforus{
+        overflow: hidden;
+    }
 
-@media screen and (max-width: 768px) {
+    .containerbeforus ::before{
+        z-index: -5;
+        content: '';
+        position: absolute;
+        width: 2000px;
+        height: 2000px;
+        left: 1100px;
+        top: 900px;
+        overflow: hidden;
+    }
+    .TextFlottant{
+        top: 1300px;
+        left: 1300px;
+        position: absolute;
+        z-index: 100;
+        width: 1000px;
+        height: 300px;
+    }
+    
+    .TextFlottant h1{
+        font-size: 50px;
+    }
+
+    .motflottantsolo{
+        top: 200px;
+        left: 550px;
+    }
+    .motflottantsolo h1{
+        font-size: 100px;
+    }
+}
+@media screen and (min-width: 1440px)  and (max-width: 2559px) {
+    .lottiehome{
+        margin-left: 1137px;
+        margin-top: 244px;
+    }
+    .containerbeforus{
+        overflow: hidden;
+    }
+
+    .containerbeforus ::before{
+        z-index: -5;
+        content: '';
+        position: absolute;
+        width: 2000px;
+        height: 2000px;
+        left: 200px;
+        top: 200px;
+        overflow: hidden;
+    }
+    .TextFlottant{
+        top: 510px;
+        left: 500px;
+        position: absolute;
+        z-index: 100;
+        width: 650px;
+        height: 300px;
+    }
+    
+    .TextFlottant h1{
+        font-size: 30px;
+    }
+
+    .motflottantsolo{
+        top: 10px;
+        left: 100px;
+    }
+
+}
+@media screen and (min-width: 1440px)  and (max-width: 2559px) {
+    .lottiehome{
+        margin-left: 1274px;
+        margin-top: 200px;
+    }
+    .containerbeforus{
+        overflow: hidden;
+    }
+
+    .containerbeforus ::before{
+        z-index: -5;
+        content: '';
+        position: absolute;
+        width: 2000px;
+        height: 2000px;
+        left: 200px;
+        top: 100px;
+        overflow: hidden;
+    }
+    .TextFlottant{
+        top: 215px;
+        left: 770px;
+        position: absolute;
+        z-index: 100;
+        width: 500px;
+        height: 300px;
+    }
+    
+    .TextFlottant h1{
+        font-size: 35px;
+    }
+
+    .motflottantsolo{
+        top: 10px;
+        left: 100px;
+    }
+
+}
+@media screen and (min-width: 1024px)  and (max-width: 1439px) {
+    .lottiehome{
+        margin-left: 850px;
+        margin-top: 210px;
+    }
+    .containerbeforus{
+        overflow: hidden;
+    }
+
+    .containerbeforus ::before{
+        z-index: -5;
+        content: '';
+        position: absolute;
+        width: 2000px;
+        height: 2000px;
+        left: 200px;
+        top: 100px;
+        overflow: hidden;
+    }
+    .TextFlottant{
+        top: 370px;
+        left: 490px;
+        position: absolute;
+        z-index: 100;
+        width: 400px;
+        height: 300px;
+    }
+    
+    .TextFlottant h1{
+        font-size: 25px;
+    }
+
+    .motflottantsolo{
+        top: 10px;
+        left: 100px;
+    }
+
+}
+@media screen and (min-width: 768px)  and (max-width: 1023px) {
 .motflottantsolo{
     top: 10px;
     left: 100px;
@@ -975,7 +1128,7 @@ font-weight: 800;
 }
 .containere{
     position: relative;
-    
+    overflow: hidden;
     left: 0;
 
 }
@@ -1021,6 +1174,22 @@ font-weight: 800;
         margin-top: 159px;
     }
     
+    .sidebar ul li {
+        height: 20px;
+    }
+    .sidebar ul li a{
+    
+     
+        font-size: 12px;
+        padding: 1px;
+    }
+
+
+
+    body{
+        overflow-y: hidden;
+    }
+
 
 
 body{
@@ -1044,46 +1213,63 @@ body{
 
 }
 
-@media screen and (max-width: 521px){
- 
+@media screen and (min-width: 425px)  and (max-width: 767px){
+
+    .containeregris{
+        display: flex;
+        position: fixed;
+        left: 0;
+        top: 0;
+         height: 100%;
+        width: 100%; 
+        z-index: 12;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
    
 
-  
-  
-    
-}
-
-
-
-@media screen and (max-width: 768px){
-        .sidebar ul li {
-            height: 20px;
-        }
-        .sidebar ul li a{
+    .containerbeforus ::before{
+        z-index: -5;
+        content: '';
+        position: absolute;
+        width: 2000px;
+        height: 2000px;
+        left: 10px;
+        top: 10px;
         
-         
-            font-size: 12px;
-            padding: 1px;
-        }
-
-        body{
-            overflow-y: hidden;
-        }
-    
-      
-        
-}
-
-@media screen and (min-width: 768px){
-    .sidebar ul li {
-        height: 35px;
     }
-    .sidebar ul li a{
-        padding: 10px;
+
+    .lottiehome{
+        margin-left: 179px;
+        margin-top: 152px;
+    }
+
+    .TextFlottant{
+        top: 485px;
+        left: 213px;
+        position: absolute;
+        z-index: 100;
+        width: 200px;
+        height: 300px;
     }
 
     
+    
+    .TextFlottant h1{
+        font-size: 10px;
+    }
+    .motflottantsolo {
+        top: 7px;
+        left: 128px;
+        font-size: 15px;
+    
+
 }
+
+}
+
+
 
 @media screen and (min-width: 1440px){
     .sidebar ul li {
