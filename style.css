@@ -198,27 +198,6 @@ form .sign-up-form{
     width: 100%;
 }
 
-/* Sidebar */
-.solou{
-    list-style: none;
-    text-decoration: none;
- 
-}
-
-#golden{
-    background-color: crimson;
-   
-   
-}
-
-#blackus{
-    color: black;
-}
-
-.binks{
-    text-decoration: none;
-    color: white;
-}
 
 .motflottantsolo h1{
     color: white;
@@ -249,18 +228,7 @@ form .sign-up-form{
     bottom: 10px; 
   }
 
-.sidebar{
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    height: 93%;
-    width: 280px ;
-    top: 0;
-    left: 0;
-    
-  
-    
-}
+
 
 .form-control{
     width: 50%;
@@ -285,64 +253,11 @@ color: white;
     margin-bottom: 10px;
 }
 
-.sidebar ul{
-text-align: center;
-margin-top: 20px;
-
-}
-
-.sidebar ul li{ 
-    
-    height: 40px;
-    width: 100%;
-    list-style: none;
-}
-
-.sidebar ul li a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 10px;
-    transition: 0.4s all ease-in-out linear;
-}
-
-.sidebar ul li a:hover{
-    background: crimson;
-}
-
-.footer_side ul {
-    width: 100%;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-  
-}
-
-.footer_side ul li a:hover{
-    background: black;
-}
-
-.footer_side{
-    margin-top: auto;
-}
 
 
-.angle{
-    color: crimson;
 
-}
 
-.titrou{
-    padding-bottom: 0;
-    color: white;
-}
 
-.iconus{
-    color: crimson;
-  font-size: 50px;
-  position: absolute;
-  margin-top: 20px;
-}
 
 /* Sidebar V2 */
 
@@ -676,6 +591,7 @@ z-index: 10;
     flex-direction: column;
    background:  no-repeat center url(./assets/4765949.jpg);
    overflow-y: scroll;
+   overflow-x: hidden;
 }
 
 .containered ul li {
@@ -955,6 +871,7 @@ font-weight: 800;
 
 
 /* media queries */
+/* écran à partir de 2560px (4k) */
 @media screen and (min-width: 2560px)  {
     .lottiehome{
         margin-left: 2250px;
@@ -995,10 +912,11 @@ font-weight: 800;
         font-size: 100px;
     }
 }
+/* écran entre 1440px et 2559px */
 @media screen and (min-width: 1440px)  and (max-width: 2559px) {
     .lottiehome{
         margin-left: 1137px;
-        margin-top: 244px;
+        margin-top: 214px;
     }
     .containerbeforus{
         overflow: hidden;
@@ -1015,8 +933,8 @@ font-weight: 800;
         overflow: hidden;
     }
     .TextFlottant{
-        top: 510px;
-        left: 500px;
+        top: 420px;
+        left: 570px;
         position: absolute;
         z-index: 100;
         width: 650px;
@@ -1033,44 +951,8 @@ font-weight: 800;
     }
 
 }
-@media screen and (min-width: 1440px)  and (max-width: 2559px) {
-    .lottiehome{
-        margin-left: 1274px;
-        margin-top: 200px;
-    }
-    .containerbeforus{
-        overflow: hidden;
-    }
 
-    .containerbeforus ::before{
-        z-index: -5;
-        content: '';
-        position: absolute;
-        width: 2000px;
-        height: 2000px;
-        left: 200px;
-        top: 100px;
-        overflow: hidden;
-    }
-    .TextFlottant{
-        top: 215px;
-        left: 770px;
-        position: absolute;
-        z-index: 100;
-        width: 500px;
-        height: 300px;
-    }
-    
-    .TextFlottant h1{
-        font-size: 35px;
-    }
-
-    .motflottantsolo{
-        top: 10px;
-        left: 100px;
-    }
-
-}
+/* écran entre 1024px et 1439px */
 @media screen and (min-width: 1024px)  and (max-width: 1439px) {
     .lottiehome{
         margin-left: 850px;
@@ -1109,6 +991,7 @@ font-weight: 800;
     }
 
 }
+/* écran entre 768px et 1023px */
 @media screen and (min-width: 768px)  and (max-width: 1023px) {
 .motflottantsolo{
     top: 10px;
@@ -1174,17 +1057,6 @@ font-weight: 800;
         margin-top: 159px;
     }
     
-    .sidebar ul li {
-        height: 20px;
-    }
-    .sidebar ul li a{
-    
-     
-        font-size: 12px;
-        padding: 1px;
-    }
-
-
 
     body{
         overflow-y: hidden;
@@ -1197,22 +1069,12 @@ body{
     overflow-y: visible;
     overflow-x: hidden;
 }
-.tailleliste{flex-direction: column;}
-.sidebar{
-    width: 100%;
-}
-.dessous{
-    justify-content: center;
-}
-.droite{
-    justify-content: center;
-}
-
 
 
 
 }
 
+/* écran entre 425px et 767px */
 @media screen and (min-width: 425px)  and (max-width: 767px){
 
     .containeregris{
@@ -1268,36 +1130,86 @@ body{
 }
 
 }
+ /* écran entre 375px et 424px */
+@media screen and (min-width: 375px)  and (max-width: 424px){
 
-
-
-@media screen and (min-width: 1440px){
-    .sidebar ul li {
-        height: 50 px;
+    .containeregris{
+        display: flex;
+        position: fixed;
+        left: 0;
+        top: 0;
+         height: 100%;
+        width: 100%; 
+        z-index: 12;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.8);
     }
-    .sidebar ul li a{
-        padding: 10px;
+
+
+
+    .containerbeforus ::before{
+        z-index: -5;
+        content: '';
+        position: absolute;
+        width: 2000px;
+        height: 2000px;
+        left: -60px;
+        top: 0;
+        
+    }
+
+    .lottiehome{
+        margin-left: 140px;
+        margin-top: 10px;
+    }
+
+    .TextFlottant{
+        top: 485px;
+        left: 213px;
+        position: absolute;
+        z-index: 100;
+        width: 200px;
+        height: 300px;
     }
 
     
+    
+    .TextFlottant h1{
+        font-size: 10px;
+    }
+    .motflottantsolo {
+        top: 150px;
+        left: 110px;
+        width: 200px;
+    
+
+}
+
+.motflottantsolo h1 {
+    font-size: 25px;
+}
+
 }
 
 
+/* écran à partir de 2560px (4k) */
 @media screen and (min-width: 2560px) {
     span{
-        font-size: 20px;
+        font-size: 30px;
     }
-    .sidebar ul li a{
-        
-        
-        font-size: 20px;
-    }
+
    
 
      .angle{
          margin-top: 0!important;
      }
 
+     .fas{
+ 
+        font-size: 40px;
+
+    
+    }
     
      
     .tailleliste span{
@@ -1310,5 +1222,19 @@ body{
      .coco{
          font-size: 20px;
      }
+
+     nav:hover{
+         width: 450px;
+     }
+
+     nav ul li a {
+        width: 400px;
+     }
+
+     nav ul li {
+         height: 250px;
+     }
+
+ 
 }
 

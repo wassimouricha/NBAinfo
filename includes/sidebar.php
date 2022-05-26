@@ -1,7 +1,7 @@
   <nav>
         <ul>
             <li>
-                <a href="#" class="nbalogo">
+                <a href="index.php" class="nbalogo">
                     <img src="assets/nbalogo.svg" alt="">
                 </a>
             </li>
