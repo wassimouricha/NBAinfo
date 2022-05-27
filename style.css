@@ -123,8 +123,10 @@ form .sign-up-form{
 
 .titreformulaire{
     font-size: 2.2rem;
-    color: #444;
+    color: black;
     margin-bottom: 10px;
+    font-weight: bold;
+    text-align: center;
 }
 
 .input-field{
@@ -137,6 +139,7 @@ form .sign-up-form{
     display: grid;   /* j'indique que le display sera celui d'une grille */
     grid-template-columns: 15% 85% ;
     padding: 0 .4rem ; /* le padding est la marge intérieur*/
+    min-width: 200px;
 
 }
 
@@ -161,7 +164,7 @@ form .sign-up-form{
 .input-field input ::placeholder {
     columns: #aaa;
     font-weight: 500;
-
+    min-width: 200px;
 }
 
 .btnform{
@@ -842,6 +845,30 @@ font-weight: 800;
 /* media queries */
 /* écran à partir de 2560px (4k) */
 @media screen and (min-width: 2560px)  {
+
+    form .sign-in-form{
+        width: 200px;
+    }
+    
+    .titreformulaire{
+      font-size: 100px;
+      color: black;
+      font-weight: bold;
+    }
+
+    .containerloginform::before{
+        content: '';
+        position: absolute;
+        width: 4000px;
+        height: 4000px;
+        border-radius: 50%;
+        background: linear-gradient(-45deg, crimson, crimson);
+        top: 400px;
+      
+    
+    }
+
+
     .lottiehome{
         margin-left: 2250px;
         margin-top: 1300px;
@@ -883,6 +910,28 @@ font-weight: 800;
 }
 /* écran entre 1440px et 2559px */
 @media screen and (min-width: 1440px)  and (max-width: 2559px) {
+
+    form .sign-in-form{
+        width: 200px;
+    }
+    
+    .titreformulaire{
+      font-size: 100px;
+      color: black;
+      font-weight: bold;
+    }
+
+    .containerloginform::before{
+        content: '';
+        position: absolute;
+        width: 2000px;
+        height: 2000px;
+        border-radius: 50%;
+        background: linear-gradient(-45deg, crimson, crimson);
+        top: 150px;
+      
+    
+    }
     .lottiehome{
         margin-left: 1137px;
         margin-top: 214px;
@@ -962,6 +1011,11 @@ font-weight: 800;
 }
 /* écran entre 768px et 1023px */
 @media screen and (min-width: 768px)  and (max-width: 1023px) {
+
+    .input-field input {
+        margin-left: 20px;
+    }
+
 .motflottantsolo{
     top: 10px;
     left: 100px;
@@ -1046,6 +1100,14 @@ body{
 /* écran entre 425px et 767px */
 @media screen and (min-width: 425px)  and (max-width: 767px){
 
+    .titreformulaire{
+        font-size: 20px;
+    }
+
+    .input-field input {
+        margin-left: 20px;
+    }
+
     .containeregris{
         display: flex;
         position: fixed;
@@ -1101,6 +1163,18 @@ body{
 }
  /* écran entre 375px et 424px */
 @media screen and (min-width: 375px)  and (max-width: 424px){
+
+    form{
+        width: 200px;
+    }
+
+    .titreformulaire{
+        font-size: 20px;
+    }
+
+    .input-field input {
+        margin-left: 20px;
+    }
 
     .containeregris{
         display: flex;
@@ -1160,6 +1234,22 @@ body{
 
 }
 
+@media screen and (min-width: 320px)  and (max-width: 374px){
+
+    form{
+        width: 200px;
+    }
+
+    .titreformulaire{
+        font-size: 20px;
+    }
+
+    .input-field input {
+        margin-left: 20px;
+    }
+
+
+}
 
 /* écran à partir de 2560px (4k) */
 @media screen and (min-width: 2560px) {
