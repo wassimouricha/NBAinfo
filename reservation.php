@@ -21,7 +21,7 @@
               
                 <div class="titrecalend">
                   <h1 >
-                    Réservez une loge VIP
+                    Réserver une loge VIP
                   </h1>
                   
                 </div>
