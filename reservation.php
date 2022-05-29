@@ -17,7 +17,7 @@
             <!-- sidebar -->
             <?php include 'includes/sidebar.php' ; ?>
            
-            <div class="containered">
+            <div class="containerloginform">
               
                 <div class="titrecalend">
                   <h1 >
@@ -105,9 +105,7 @@
               </div>
          
 
-            
-            <!-- footer -->
-            <?php include 'includes/footer.php' ; ?>
+
 
     <!-- Script -->
       <script src="//code.jquery.com/jquery-1.12.4.js"></script>

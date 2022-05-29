@@ -82,12 +82,10 @@ body, input{
     height: 100%;
     top: 0;
     left: 0;
-
     margin-top: 5px;
     margin-bottom: 20px;
  
  
-    
 
 }
 
@@ -120,7 +118,7 @@ form .sign-in-form{
 form .sign-up-form{
     z-index: 2;
 }
-
+field
 .titreformulaire{
     font-size: 2.2rem;
     color: black;
@@ -132,7 +130,7 @@ form .sign-up-form{
 .input-field{
     max-width: 380px;
     width: 100%;
-    height: 75px;
+    height: 60px;
     background-color: #f0f0f0;
     margin: 10px 0 ;
     border-radius: 55px;
@@ -159,6 +157,7 @@ form .sign-up-form{
     font-size: 1.1rem;
     color: #333;
     border-radius: 55px;
+    height: 60px;
 }
 
 .input-field input ::placeholder {
@@ -166,6 +165,9 @@ form .sign-up-form{
     font-weight: 500;
     min-width: 200px;
 }
+
+
+
 
 .btnform{
     width: 150px;
@@ -602,7 +604,7 @@ z-index: 10;
 }
 
 .titrecalend h1{
-    color: white;
+    color: black;
     left: 200px;
 }
 
@@ -689,6 +691,7 @@ z-index: 10;
 
 .selectuded{
     border-radius: 55px;
+    height: 60px;
 }
 
 /* carte  page offre*/
@@ -911,6 +914,15 @@ font-weight: 800;
 }
 /* écran entre 1440px et 2559px */
 @media screen and (min-width: 1440px)  and (max-width: 2559px) {
+
+    .form-container{
+        top: 90px;
+        left: 200px;
+
+     
+     
+    
+    }
 
     form .sign-in-form{
         width: 200px;
