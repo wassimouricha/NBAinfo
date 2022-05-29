@@ -84,7 +84,7 @@ body, input{
     left: 0;
     margin-top: 5px;
     margin-bottom: 20px;
- 
+    overflow-y: scroll;
  
 
 }
@@ -848,6 +848,20 @@ font-weight: 800;
 /* media queries */
 /* écran à partir de 2560px (4k) */
 @media screen and (min-width: 2560px)  {
+    .btnform{
+        width: 205px;
+        height: 80px;
+    }
+
+
+    .form-container{
+        top: 100px;
+        left: 500px;
+
+     
+     
+    
+    }
 
     form .sign-in-form{
         width: 200px;
@@ -915,8 +929,10 @@ font-weight: 800;
 /* écran entre 1440px et 2559px */
 @media screen and (min-width: 1440px)  and (max-width: 2559px) {
 
+   
+
     .form-container{
-        top: 90px;
+        top: 35px;
         left: 200px;
 
      
@@ -985,6 +1001,12 @@ font-weight: 800;
 
 /* écran entre 1024px et 1439px */
 @media screen and (min-width: 1024px)  and (max-width: 1439px) {
+
+    .form-container{
+        top: 20px;
+        left: 135px;
+
+    }
     .lottiehome{
         margin-left: 850px;
         margin-top: 210px;
@@ -1025,10 +1047,35 @@ font-weight: 800;
 /* écran entre 768px et 1023px */
 @media screen and (min-width: 768px)  and (max-width: 1023px) {
 
-    .input-field input {
-        margin-left: 20px;
+    .form-container{
+        top: -11px;
+        left: 135px;
+        overflow-y: scroll;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 121px;
+        padding-top: 200px;
     }
 
+    .input-field{
+        height: 40px;
+    }
+
+    .input-field input {
+        margin-left: 20px;
+        height: 40px;
+    }
+    .input-field i{
+        line-height: 10px;
+    }
+    .selectuded{
+        height: 40px;
+    }
+
+    .form-label {
+        
+        width: 300px;
+    }
 .motflottantsolo{
     top: 10px;
     left: 100px;
@@ -1113,6 +1160,35 @@ body{
 /* écran entre 425px et 767px */
 @media screen and (min-width: 425px)  and (max-width: 767px){
 
+    .form-container{
+        top: -10px;
+        left: 50px;
+        overflow-y: scroll;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 121px;
+        padding-top: 200px;
+    }
+
+    .input-field{
+        height: 40px;
+    }
+
+    .input-field input {
+        margin-left: 20px;
+        height: 40px;
+    }
+    .input-field i{
+        line-height: 10px;
+    }
+    .selectuded{
+        height: 40px;
+    }
+
+    .form-label {
+        
+        width: 300px;
+    }
     .titreformulaire{
         font-size: 20px;
     }
@@ -1176,6 +1252,36 @@ body{
 }
  /* écran entre 375px et 424px */
 @media screen and (min-width: 375px)  and (max-width: 424px){
+
+    .form-container{
+        top: -16px;
+        left: 50px;
+        overflow-y: scroll;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 121px;
+        padding-top: 200px;
+    }
+
+    .input-field{
+        height: 40px;
+    }
+
+    .input-field input {
+        margin-left: 20px;
+        height: 40px;
+    }
+    .input-field i{
+        line-height: 10px;
+    }
+    .selectuded{
+        height: 40px;
+    }
+
+    .form-label {
+        font-size: 12px;
+        width: 300px;
+    }
 
     form{
         width: 200px;
@@ -1248,6 +1354,42 @@ body{
 }
 
 @media screen and (min-width: 320px)  and (max-width: 374px){
+
+    .form-container{
+        top: -16px;
+        left: 50px;
+        overflow-y: scroll;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 121px;
+        padding-top: 200px;
+    }
+
+    .input-field{
+        height: 40px;
+    }
+
+    .input-field input {
+        margin-left: 20px;
+        height: 40px;
+    }
+    .input-field i{
+        line-height: 10px;
+    }
+    .selectuded{
+        height: 40px;
+    margin-left: 25px;
+    font-size: 13px;
+    }
+
+    .form-label {
+        font-size: 12px;
+        width: 300px;
+    }
+
+    form{
+        width: 200px;
+    }
 
     .signin-signup{
         left: 55%;
