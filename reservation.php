@@ -112,7 +112,8 @@
       <script src="//code.jquery.com/jquery-1.12.4.js"></script>
       <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
       <script>
-      $( "#datepicker" ).datepicker();
+      $( "#datepicker" ).datepicker();  
+    //   librairie jquery , l'id datepicker , et j'utilise le datepicker de la librairie 
       </script>
       <script src="./script.js"></script>
 </body>
