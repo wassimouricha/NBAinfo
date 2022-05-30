@@ -22,7 +22,7 @@ $(document).ready(function(){
     
     $('.TextFlottant .slidetext:gt(0)').hide();
     setInterval(function(){
-      $('.TextFlottant :first-child').fadeOut(1500).next('.slidetext').fadeIn(1500)
+      $('.TextFlottant :first-child').fadeOut(1).next('.slidetext').fadeIn(1500)
       .end().appendTo('.TextFlottant');
   }, 7000);
     
