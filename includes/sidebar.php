@@ -4,6 +4,10 @@
                 <a href="index.php" class="nbalogo">
                     <img src="assets/nbalogo.svg" alt="">
                 </a>
+                <div id="toggle">
+                <i class="indicator"></i>
+
+                     </div>
             </li>
             <li>
                 <a href="index.php">
@@ -125,6 +129,10 @@
                     <span class="nav-item"> Nous contacter </span>
                 </a>
             </li>
+
+          
+            
+            
          
         </ul>
     </nav>

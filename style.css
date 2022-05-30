@@ -334,6 +334,8 @@ nav:hover{
     transition: all 0.5s ease;
 }
 
+
+
 .fas{
     position: relative;
     width: 70px;
@@ -844,3 +846,47 @@ font-weight: 800;
     
 }
 
+/* Bouton night mode */
+
+#toggle {
+    margin-left: 3px;
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 30px;
+    border-radius: 160px;
+    background: black;
+    transition: 0.5s;
+    box-shadow: inset 0 8px 20px rgba(0, 0, 0, 1),
+                inset 0 8px 8px rgba(0, 0, 0, 1),
+                inset 0 -4px 4px rgba(0, 0, 0, 1),
+     ;
+     cursor: pointer;
+}
+
+#toggle .indicator{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    background: linear-gradient(to bottom, #444, #222);
+    border-radius: 50%;
+    transform: scale(0.9);
+    box-shadow: inset 0 8px 40px rgba(0, 0, 0, 0.5), /* inset modifie l'ombre afin qu'elle soit tournée vers l'intérieur du cadre */
+                inset 0 4px 4px rgba(255, 255, 255, 0.2),
+                inset 0 -4px 4px rgba(255, 255, 255, 0.2);
+                transition: 0.5s;
+}
+
+#toggle.active .indicator{
+    left: 48px;
+}
+
+#toggle.active{
+    background-color: #fff;
+}
+
+nav.active{
+    background: black;
+}
