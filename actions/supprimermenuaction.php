@@ -26,7 +26,7 @@ if(isset($_GET['id']) AND !empty($_GET['id'])){
                 $deletethismenu->execute(array($idofthemenu));
             
                     
-                header('location: ../mes-reservations.php');
+                header('location: ../mes-reservations.php'); //premet de rediriger vers la page mes-reservations.php lors de la fin de la fonction
             }else{
                 echo "vous n'avez pas le droit de supprimer une reservation qui ne vous appartient pas !";
             }
