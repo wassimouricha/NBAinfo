@@ -1,6 +1,6 @@
   <nav>
         <ul>
-            <li>
+            <li id="btnnav">
                 <a href="index.php" class="nbalogo">
                     <img src="assets/nbalogo.svg" alt="">
                 </a>
