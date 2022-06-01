@@ -10,7 +10,8 @@
 <!-- Body -->
 <body class="main">
 
-
+             <!-- SplashScreen -->
+             <?php include 'includes/splashscreen.php' ; ?>
             <!-- sidebar -->
             <?php include 'includes/sidebar.php' ; ?>
             <!-- Mot flottant -->
