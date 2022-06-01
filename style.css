@@ -945,3 +945,14 @@ nav.active{
     opacity: 0;
     transition: ease-in-out 0.5s;
 }
+
+.langagewrapped {
+    display: flex;
+   flex-direction: row;
+   width: 100%;
+}
+
+.langagewrapped a{
+    width: 100%;
+    font-weight: bold;
+}

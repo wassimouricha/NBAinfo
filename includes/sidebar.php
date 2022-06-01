@@ -130,6 +130,15 @@
                 </a>
             </li>
 
+            <li>
+                <div class="langagewrapped">
+                <a href="#" langage = "anglais" >EN</a>
+
+                <a href="#" langage = "français">FR</a>
+                </div>
+               
+            </li>
+
           
             
             
