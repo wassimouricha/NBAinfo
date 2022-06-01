@@ -946,6 +946,7 @@ nav.active{
     transition: ease-in-out 0.5s;
 }
 
+/* langues */
 .langagewrapped {
     display: flex;
    flex-direction: row;
@@ -955,4 +956,8 @@ nav.active{
 .langagewrapped a{
     width: 100%;
     font-weight: bold;
+}
+
+.france{
+    margin-left: auto;
 }

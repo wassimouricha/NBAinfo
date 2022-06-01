@@ -134,7 +134,7 @@
                 <div class="langagewrapped">
                 <a href="#" langage = "anglais" >EN</a>
 
-                <a href="#" langage = "français">FR</a>
+                <a href="#" id="france" langage = "français">FR</a>
                 </div>
                
             </li>
