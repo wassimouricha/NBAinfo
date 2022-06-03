@@ -103,22 +103,7 @@ form{
  
 }
 
-/*bootstrap style */
-.mb-3{
-    text-align: center;
-    line-height: 1;
-    font-weight: 500;
-    font-size: 1.1rem;
-}
-form .sign-in-form{
-    z-index: 2;
 
-}
-
-form .sign-up-form{
-    z-index: 2;
-}
-field
 .titreformulaire{
     font-size: 2.2rem;
     color: black;
@@ -210,6 +195,13 @@ field
     margin-top: 5px;
 }
 
+.butonneded{
+    text-align: center;
+    width: 100%;
+}
+
+
+
 .TextFlottant{
     top: 350px;
     left: 900px;
@@ -246,6 +238,7 @@ color: white;
 .btn{
     color: black;
     background-color: crimson;
+    text-align: center;
 }
 
 .imagelogo{
@@ -612,7 +605,7 @@ z-index: 10;
 }
 
 .titrecalend h1{
-    color: black;
+    color: white;
     left: 200px;
 }
 
@@ -777,34 +770,105 @@ font-weight: 800;
 
 /* cartes */
 .cardus{
-    margin:  20px;
-    margin-left: 150px;
+   
     /* ou 0 auto c'est selon */
-    max-width: 1000px;
+
     display: grid;
     /* en dessous on indique les parametres de sa grille */
-    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+    grid-gap: 40px;
+    padding: 20px;
+    margin: 20px;
+    place-items: center center;
+   
 }
 
 .cardus2{
-    margin:  20px;
-    /* ou 0 auto c'est selon */
-    max-width: 1000px;
-    margin-left: 150px;
+  
+
     display: grid;
     /* en dessous on indique les parametres de sa grille */
-    grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
-    gap: 150px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    padding: 20px;
+    margin: 20px;
+      /* ou 0 auto c'est selon */
+    place-items: center center;
+   
 }
 
 .cardass{
-    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1) ;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+    text-align: center;
+    margin-left: 100px;
 }
 
-.cardus_image{
+
+.card_container{
+    position: relative;
+    clip-path: polygon(0 0 ,100% 0 , 100% 85%, 0 100%); /* permet de faire une coupure diagonale */
+text-align: center;
+justify-content: center;
+    border-radius: 20px;
+}
+
+.card_container:after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(
+        135deg,
+        #0100ec,
+        #fb36f4
+    );
+    border-radius: 20px 20px 0 0;
+    opacity: 0.6;
+}
+
+.card_container img{
     width: 100%;
     display: block;
+    border-radius: 20px 20px 0 0;
+}
+
+.card_container2{
+    position: relative;
+    clip-path: polygon(0 0 ,100% 0 , 100% 95%, 0 100%); /* permet de faire une coupure diagonale */
+text-align: center;
+justify-content: center;
+color: black;
+    border-radius: 20px;
+}
+
+.card_container2 p {
+    padding-bottom: 15px;
+}
+
+.card_container2:before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(
+        135deg,
+        #0100ec,
+        #fb36f4
+    );
+    border-radius: 20px 20px 0 0;
+    opacity: 0.4;
+}
+
+.card_container2 img{
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
 }
 
 .cardus_content{
@@ -847,10 +911,7 @@ font-weight: 800;
     color: crimson;
 }
 
-.butonneded{
-    margin: 0 auto;
-    
-}
+
 
 /* Bouton night mode */
 

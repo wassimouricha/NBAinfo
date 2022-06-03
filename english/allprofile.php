@@ -27,13 +27,14 @@ require('actions/showalluserprofilaction.php');
                         while($ausers = $getAllTheProfile->fetch()){
                             ?>
                              <div class="cardass">
-                             <?= '<img class="cardus_image" src="data:image/png|image/jpeg|image/gif|image/jpg;base64,' . base64_encode( $ausers['binu'] ) . '" />'; ?>
-                          <div class="cardus_content">
-                            <p>Pseudo :  <?php echo $ausers['pseudo'];  ?>  </p>
+                            
+                          <div class="card_container2">
+                          <?= '<img src="data:image/png|image/jpeg|image/gif|image/jpg;base64,' . base64_encode( $ausers['binu'] ) . '" />'; ?>
+                         
+                          </div>
+                          <p>Pseudo :  <?php echo $ausers['pseudo'];  ?>  </p>
                             <p> Name : <?php echo $ausers['nom'];  ?></p>
                             <p> Firstname : <?php echo $ausers['prenom'];  ?></p>
-                          </div>
-                        
                   </div>
                              <?php 
                         }

@@ -30,7 +30,7 @@ require('actions/mesmenusaction.php');
                   
                 </div>
                 <!-- mon tableau de carte -->
-                <div class="cardus">
+                <div class="cardus2">
                   
                
                   <?php 
@@ -38,7 +38,7 @@ require('actions/mesmenusaction.php');
                             ?>
                              <div class="cardass">
                      
-                          <div class="cardus_content">
+                          <div class="card_container2">
                             <p> <?php echo $menus['date'];  ?>  </p>
                             <p> <?php echo $menus['heure'];  ?></p>
                             <p> <?php echo $menus['nom'];  ?></p>
@@ -46,13 +46,13 @@ require('actions/mesmenusaction.php');
                             <p> <?php echo $menus['equipe'];  ?></p>
                             <p> <?php echo $menus['loge'];  ?></p>
                           </div>
-                          <div class="card_info">
+                        
                         
                             <div>
                               <a href="modifier-reservationen.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Edit</a>
                               <a href="actions/supprimermenuaction.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Delete</a>
                             </div>
-                          </div>
+                      
                   </div>
                              <?php 
                         }
