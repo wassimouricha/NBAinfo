@@ -15,11 +15,11 @@
             <!-- sidebar -->
             <?php include 'includes/sidebaren.php' ; ?>
             <!-- Mot flottant -->
-            <?php include 'includes/motflottant.php' ; ?>
+            <?php include 'includes/motflottanten.php' ; ?>
             <!-- automatic carousel slider -->
-            <?php include 'includes/carouselslider.php' ; ?>
+            <?php include 'includes/carouselslideren.php' ; ?>
             <!-- TextSlider  -->
-            <?php include 'includes/textslider.php' ; ?>
+            <?php include 'includes/textslideren.php' ; ?>
             <!-- deuxieme container de la homepage  -->
             <?php include 'includes/containerhome.php' ; ?>
 

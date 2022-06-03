@@ -18,13 +18,13 @@ require('actions/showoneuserprofilaction.php');
 
 
             <!-- sidebar -->
-            <?php include 'includes/sidebar.php' ; ?>
+            <?php include 'includes/sidebaren.php' ; ?>
            
             <div class="containered">
          
                 <div class="titrecalend">
                   <h1 >
-                    Voici Mon Profil
+                    My profil
                   </h1>
                
                 </div>
@@ -40,35 +40,11 @@ require('actions/showoneuserprofilaction.php');
                     <?= '<img class="cardus_image" src="data:image/png|image/jpeg|image/gif|image/jpg;base64,' . base64_encode($userinfo['binu']) . '" />'; ?>
                     <div class="cardus_content">
                         <h4 >Pseudo : <?= $userpseudo; ?></h4>
-                        <p >Nom : <?= $usernom; ?>  <br>Prénom : <?= $userprenom; ?> </p>
+                        <p >Name : <?= $usernom; ?>  <br>Firstname : <?= $userprenom; ?> </p>
                         </div>
                     </div>
 
-                    <?php 
-                        while($menu = $gethismenu->fetch()){
-                            ?>
-                         <div class="cardass">
-                      <?= '<img class="cardus_image" src="data:image/png|image/jpeg|image/gif|image/jpg;base64,' . base64_encode( $menu['bin'] ) . '" />'; ?>
-                          <div class="cardus_content">
-                            <p> <?=  $menu['titre'];  ?>  </p>
-                            <p> <?= $menu['descriptioned'];  ?></p>
-                            <p> <?= $menu['content'];  ?></p>
-                          </div>
-                          <div class="card_info">
-                            <div>
-                               Auteur du menu : <?= $userpseudo; ?>
-                               <br>
-                               publié le :  <?= $menu['date_publication'];  ?>
-                            </div>
-                            
-                          </div>
-                  </div>
-
-                            <?php
-
-                        }
                     
-                    ?>
                     
                 </div>
                 <?php
@@ -82,9 +58,7 @@ require('actions/showoneuserprofilaction.php');
               </div>
          
 
-            
-            <!-- footer -->
-            <?php include 'includes/footer.php' ; ?>
+
 
     <!-- Script -->
       <script src="//code.jquery.com/jquery-1.12.4.js"></script>

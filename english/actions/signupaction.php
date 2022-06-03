@@ -54,7 +54,7 @@ if(isset($_POST['validate'])){
             $_SESSION['binu'] =  $usersInfos['binu'];
 
                 //je redirige apres la connexion vers index.php
-            header('Location: index.php');
+            header('Location: indexen.php');
 
         }else{
             $errorMsg = " L'utilisateur existe déjà sur le site !";

@@ -30,7 +30,7 @@ if(isset($_POST['validate'])){
                         $_SESSION['pseudo'] =  $usersInfos['pseudo'];
 
                         //redirige l'utilisateur vers la paghe d'accueil
-                        header('Location: index.php');
+                        header('Location: indexen.php');
 
                     } else{
                         $errorMsg = "Votre mot de passe est incrorrect";

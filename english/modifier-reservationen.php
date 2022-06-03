@@ -17,7 +17,7 @@ require('actions/editmenuaction.php');
 
 
             <!-- sidebar -->
-            <?php include 'includes/sidebar.php' ; ?>
+            <?php include 'includes/sidebaren.php' ; ?>
            
             <div class="containered">
 
@@ -45,13 +45,13 @@ require('actions/editmenuaction.php');
                                     ?>
                                      <form class="container" method="POST" enctype="multipart/form-data"> <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
                                      <div class="mb-3">
-                         <label for="exampleInputEmail1" class="form-label">Veuillez selectionner une date :</label>
+                         <label for="exampleInputEmail1" class="form-label">Please select a date :</label>
                          <input type="text"  name="date" id="datepicker"  value="<?= $titremenu; ?> " >    
                          </div>
                    
 
                          <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Veuillez selectionner une heure :</label>
+                <label for="exampleInputEmail1" class="form-label">Please select an hour :</label>
                     <select name="heure" id="selecthours" >
                    
                             <option  name="heure" value="13h00"><p>13:00</p></option>
@@ -65,12 +65,12 @@ require('actions/editmenuaction.php');
 
                       
                 <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Veuillez selectionner un type de loge :</label>
+                <label for="exampleInputEmail1" class="form-label">Please select a type of Lodge :</label>
                     <select name="loge" id="selecthours">
                             
-                            <option  name="rloge" value="Loge classique"><p>Loge classique</p></option>
-                            <option  name="rloge" value="Loge VIP"><p>Loge VIP</p></option>
-                            <option  name="rloge" value="Loge premium">Loge premium </option>
+                            <option  name="rloge" value="Loge classique"><p>Classical Lodge</p></option>
+                            <option  name="rloge" value="Loge VIP"><p>VIP Lodge</p></option>
+                            <option  name="rloge" value="Loge premium">Premium Lodge </option>
                         
                         </select>
                 
@@ -78,7 +78,7 @@ require('actions/editmenuaction.php');
                           
                           
                           <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">nom</label>
+                              <label for="exampleInputEmail1" class="form-label">Name</label>
                               <textarea  class="form-control" name="nom" > <?= $contentmenu; ?></textarea>
                           </div>
                           <div class="mb-3">
@@ -86,7 +86,7 @@ require('actions/editmenuaction.php');
                               <textarea  class="form-control" name="email" > <?= $imagemenu; ?></textarea>
                           </div>
                           <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">"Veuillez selectionner une équipe pour ces playoffs (match à domicile pour l'équipe choisis):"</label>
+                <label for="exampleInputEmail1" class="form-label">Please select a team (Home game only ):</label>
                     <select name="equipe" id="selecthours">
                        
                             <option  name="equipe" value="Heat"><p>Heat</p></option>
@@ -108,7 +108,7 @@ require('actions/editmenuaction.php');
                 
                 </div>
                   
-                          <button type="submit" class="btnform" name="validate" >Modifier</button>
+                          <button type="submit" class="btnform" name="validate" >Edit</button>
                      
                   </form>
 

@@ -19,13 +19,13 @@ require('actions/mesmenusaction.php');
 
 
             <!-- sidebar -->
-            <?php include 'includes/sidebar.php' ; ?>
+            <?php include 'includes/sidebaren.php' ; ?>
            
             <div class="containered">
              
                 <div class="titrecalend">
                   <h1 >
-                    Voici mes reservations
+                    Here are my reservations
                   </h1>
                   
                 </div>
@@ -49,8 +49,8 @@ require('actions/mesmenusaction.php');
                           <div class="card_info">
                         
                             <div>
-                              <a href="modifier-reservation.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Modifier</a>
-                              <a href="actions/supprimermenuaction.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Supprimer</a>
+                              <a href="modifier-reservationen.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Edit</a>
+                              <a href="actions/supprimermenuaction.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Delete</a>
                             </div>
                           </div>
                   </div>
@@ -66,7 +66,7 @@ require('actions/mesmenusaction.php');
                 <br>
                 <div class="butonneded" >
 
-<a href="./reservation.php" class="btn btn-dark" >Ajouter une reservation</a>
+<a href="./reservation.php" class="btn btn-dark" >Add a reservation</a>
 
 </div>
                                         
@@ -76,9 +76,6 @@ require('actions/mesmenusaction.php');
               </div>
          
 
-            
-            <!-- footer -->
-            <?php include 'includes/footer.php' ; ?>
 
     <!-- Script -->
       <script src="//code.jquery.com/jquery-1.12.4.js"></script>

@@ -15,18 +15,11 @@ require('actions/showalluserprofilaction.php');
 
 
             <!-- sidebar -->
-            <?php include 'includes/sidebar.php' ; ?>
+            <?php include 'includes/sidebaren.php' ; ?>
            
             <div class="containered">
-                <ul class="listemenud">
-                 <li> <a href="index.php"> <i class="fa-solid fa-calendar"> <span> Accueil </span>  </i></a>  </li>
-                </ul>
-                <div class="titrecalend">
-                  <h1 >
-                    Voici les Profils
-                  </h1>
-                  
-                </div>
+
+              
                 <!-- mon tableau de carte -->
                 <div class="cardus">
                  
@@ -37,8 +30,8 @@ require('actions/showalluserprofilaction.php');
                              <?= '<img class="cardus_image" src="data:image/png|image/jpeg|image/gif|image/jpg;base64,' . base64_encode( $ausers['binu'] ) . '" />'; ?>
                           <div class="cardus_content">
                             <p>Pseudo :  <?php echo $ausers['pseudo'];  ?>  </p>
-                            <p> Nom : <?php echo $ausers['nom'];  ?></p>
-                            <p> Prénom : <?php echo $ausers['prenom'];  ?></p>
+                            <p> Name : <?php echo $ausers['nom'];  ?></p>
+                            <p> Firstname : <?php echo $ausers['prenom'];  ?></p>
                           </div>
                         
                   </div>
@@ -56,9 +49,7 @@ require('actions/showalluserprofilaction.php');
               </div>
          
 
-            
-            <!-- footer -->
-            <?php include 'includes/footer.php' ; ?>
+
 
     <!-- Script -->
       <script src="//code.jquery.com/jquery-1.12.4.js"></script>

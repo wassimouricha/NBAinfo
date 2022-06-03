@@ -26,6 +26,6 @@ if(isset($_GET['id']) AND !empty($_GET['id'])){
                     
                 echo '<script type="text/javascript">'; 
                 echo 'alert("Reservation annulé avec succès");';
-                echo 'window.location.href = "../booked.php";';
+                echo 'window.location.href = "../bookeden.php";';
                 echo '</script>';
             }}

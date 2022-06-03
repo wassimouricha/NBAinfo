@@ -50,7 +50,7 @@ require('actions/showallbooked.php');
                           <div class="card_info">
                           
                             <div>
-                              <a href="modifier-reservation.php?id=<?php echo $booked['id']; ?>" class="cardus_link"> Modify</a>
+                              <a href="modifier-reservationen.php?id=<?php echo $booked['id']; ?>" class="cardus_link"> edit</a>
                               <a href="actions/supprimermenuactionadmin.php?id=<?php echo $booked['id']; ?>" class="cardus_link"> Delete</a>
                             </div>
                           </div>

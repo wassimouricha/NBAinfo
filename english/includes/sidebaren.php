@@ -38,13 +38,13 @@
                 </a>
             </li>
             <li>
-                <a href="reservation.php">
+                <a href="reservationen.php">
                 <i class="fas fa-user"></i>
                     <span class="nav-item"> Book a Lodge  </span>
                 </a>
             </li>
             <li>
-                <a href="mes-reservations.php">
+                <a href="mes-reservationsen.php">
                 <i class="fas fa-user"></i>
                     <span class="nav-item"> My reservations </span>
                 </a>
@@ -94,7 +94,7 @@
              </li>
 
              <li>
-                <a href="booked.php">
+                <a href="bookeden.php">
                 <i class="fas fa-user"></i>
                     <span class="nav-item">reservation</span>
                 </a>

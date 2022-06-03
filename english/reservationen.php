@@ -15,13 +15,13 @@
 
 
             <!-- sidebar -->
-            <?php include 'includes/sidebar.php' ; ?>
+            <?php include 'includes/sidebaren.php' ; ?>
            
             <div class="containerloginform">
               
                 <div class="titrecalend">
                   <h1 >
-                    Réserver une loge VIP
+                    Book a VIP Lodge
                   </h1>
                   
                 </div>
@@ -31,14 +31,14 @@
 
                 <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Nom" name="rname">
+                        <input type="text" placeholder="Name" name="rname">
                     </div>
 
                 <div class="input-field">
                         <i class="fas fa-user"></i>
                         <input type="text" placeholder="Email" name="rmail">
                     </div>
-                    <label for="exampleInputEmail1" class="form-label">Veuillez selectionner une date :</label>
+                    <label for="exampleInputEmail1" class="form-label">Please select a date :</label>
 
                     <div class="input-field">
                         <i class="fas fa-user"></i>
@@ -48,7 +48,7 @@
 
                 
 
-                <label for="exampleInputEmail1" class="form-label">Veuillez selectionner une heure :</label>
+                <label for="exampleInputEmail1" class="form-label">Please select an hour :</label>
                 <div class="input-field">
                         <i class="fas fa-user"></i>
                         <select  name="rhours" class="selectuded"> 
@@ -60,17 +60,17 @@
 
                         </select>
                     </div>
-                    <label for="exampleInputEmail1" class="form-label">Veuillez selectionner un type de loge :</label>
+                    <label for="exampleInputEmail1" class="form-label">Please select a type of Lodge :</label>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
                         <select  name="rloge" class="selectuded"> 
-                        <option  name="rloge" value="Loge classique"><p>Loge classique</p></option>
-                            <option  name="rloge" value="Loge VIP"><p>Loge VIP</p></option>
-                            <option  name="rloge" value="Loge premium">Loge premium </option>
+                        <option  name="rloge" value="Loge classique"><p>Classical Lodge</p></option>
+                            <option  name="rloge" value="Loge VIP"><p>VIP Lodge</p></option>
+                            <option  name="rloge" value="Loge premium">Premium Lodge </option>
 
                         </select>
                     </div>
-                    <label for="exampleInputEmail1" class="form-label">Veuillez selectionner une équipe pour ces playoffs (match à domicile pour l'équipe choisis):</label>
+                    <label for="exampleInputEmail1" class="form-label">Please select a team (Home game only ):</label>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
                         <select  name="rteam" class="selectuded"> 
@@ -93,7 +93,7 @@
 
 
          
-                <input type="submit" name="validate"  class="btnform" value="Reservez">
+                <input type="submit" name="validate"  class="btnform" value="Book">
                 <br>
                 <br>
                 
