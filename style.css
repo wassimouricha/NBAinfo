@@ -948,16 +948,18 @@ nav.active{
 
 /* langues */
 .langagewrapped {
-    display: flex;
+  display: flex;
    flex-direction: row;
    width: 100%;
 }
 
 .langagewrapped a{
+    display: inline; /* le contenant prend la taille du contenu*/
     width: 100%;
     font-weight: bold;
 }
 
 .france{
     margin-left: auto;
+    text-align: right;
 }
