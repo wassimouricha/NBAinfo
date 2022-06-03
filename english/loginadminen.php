@@ -13,7 +13,7 @@
 
 
             <!-- sidebar -->
-            <?php include 'includes/sidebar.php' ; ?>
+            <?php include 'includes/sidebaren.php' ; ?>
             <!-- formulaire -->
       
         <div class="containereform">
@@ -29,7 +29,7 @@ if(isset($errorMsg)){echo '<p class="messagus">'.$errorMsg.'</p>'; }  ?>
                             <div class="form-container">
                                 <div class="signin-signup">
                                     <form  class="sign-in-form" method="POST">
-                                        <h2 class="titreformulaire"> Connexion Administrateur</h2>
+                                        <h2 class="titreformulaire"> Login Admin</h2>
                                         <div class="input-field">
                                             <i class="fas fa-user"></i>
                                             <input type="text" placeholder="Pseudo" name="pseudo">
@@ -38,7 +38,7 @@ if(isset($errorMsg)){echo '<p class="messagus">'.$errorMsg.'</p>'; }  ?>
                                             <i class="fas fa-lock"></i>
                                             <input type="password" placeholder="Mot de passe" name="mdp">
                                         </div>
-                                        <button type="submit" class="btnform" name="validate">Connexion</button>
+                                        <button type="submit" class="btnform" name="validate">Login</button>
                                     
                                     </form>
                                 </div>
@@ -59,6 +59,7 @@ if(isset($errorMsg)){echo '<p class="messagus">'.$errorMsg.'</p>'; }  ?>
 
                                 
                             </div>
+
 
 
     <!-- Script -->

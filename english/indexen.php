@@ -11,9 +11,9 @@
 <body class="main">
 
              <!-- SplashScreen -->
-             <?php include 'includes/splashscreen.php' ; ?>
+             <?php include 'includes/splashscreenen.php' ; ?>
             <!-- sidebar -->
-            <?php include 'includes/sidebar.php' ; ?>
+            <?php include 'includes/sidebaren.php' ; ?>
             <!-- Mot flottant -->
             <?php include 'includes/motflottant.php' ; ?>
             <!-- automatic carousel slider -->

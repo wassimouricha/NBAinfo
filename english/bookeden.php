@@ -21,13 +21,13 @@ require('actions/showallbooked.php');
 
 
             <!-- sidebar -->
-            <?php include 'includes/sidebar.php' ; ?>
+            <?php include 'includes/sidebaren.php' ; ?>
            
             <div class="containered">
              
                 <div class="titrecalend">
                   <h1 >
-                    Voici toutes les réservations
+                    Here is the reservation
                   </h1>
                   
                 </div>
@@ -42,16 +42,16 @@ require('actions/showallbooked.php');
                      
                           <div class="cardus_content">
                             <p> Date :  <?php echo $booked['date'];  ?>  </p>
-                            <p> Heure :  <?php echo $booked['heure'];  ?></p>
-                            <p> Nom : <?php echo $booked['nom'];  ?></p>
+                            <p> Hour :  <?php echo $booked['heure'];  ?></p>
+                            <p> Name : <?php echo $booked['nom'];  ?></p>
                             <p> E-mail : <?php echo $booked['email'];  ?></p>
                             <p> Type : <?php echo $booked['loge'];  ?></p>
                           </div>
                           <div class="card_info">
                           
                             <div>
-                              <a href="modifier-reservation.php?id=<?php echo $booked['id']; ?>" class="cardus_link"> Modifier</a>
-                              <a href="actions/supprimermenuactionadmin.php?id=<?php echo $booked['id']; ?>" class="cardus_link"> Supprimer</a>
+                              <a href="modifier-reservation.php?id=<?php echo $booked['id']; ?>" class="cardus_link"> Modify</a>
+                              <a href="actions/supprimermenuactionadmin.php?id=<?php echo $booked['id']; ?>" class="cardus_link"> Delete</a>
                             </div>
                           </div>
                   </div>

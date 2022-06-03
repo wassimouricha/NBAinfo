@@ -1,8 +1,6 @@
 <?php 
-
-require('actions/securiteadmin.php');
-require('actions/showallbooked.php');
-
+require('actions/securiteaction.php');
+require('actions/mesmenusaction.php');
 
    
 ?>
@@ -27,31 +25,32 @@ require('actions/showallbooked.php');
              
                 <div class="titrecalend">
                   <h1 >
-                    Voici toutes les réservations
+                    Voici mes reservations
                   </h1>
                   
                 </div>
                 <!-- mon tableau de carte -->
                 <div class="cardus">
-                 
+                  
                
                   <?php 
-                        while($booked = $getAllTheBooked->fetch()){
+                        while($menus = $getAllTheMenu->fetch()){
                             ?>
                              <div class="cardass">
                      
                           <div class="cardus_content">
-                            <p> Date :  <?php echo $booked['date'];  ?>  </p>
-                            <p> Heure :  <?php echo $booked['heure'];  ?></p>
-                            <p> Nom : <?php echo $booked['nom'];  ?></p>
-                            <p> E-mail : <?php echo $booked['email'];  ?></p>
-                            <p> Type : <?php echo $booked['loge'];  ?></p>
+                            <p> <?php echo $menus['date'];  ?>  </p>
+                            <p> <?php echo $menus['heure'];  ?></p>
+                            <p> <?php echo $menus['nom'];  ?></p>
+                            <p> <?php echo $menus['email'];  ?></p>
+                            <p> <?php echo $menus['equipe'];  ?></p>
+                            <p> <?php echo $menus['loge'];  ?></p>
                           </div>
                           <div class="card_info">
-                          
+                        
                             <div>
-                              <a href="modifier-reservation.php?id=<?php echo $booked['id']; ?>" class="cardus_link"> Modifier</a>
-                              <a href="actions/supprimermenuactionadmin.php?id=<?php echo $booked['id']; ?>" class="cardus_link"> Supprimer</a>
+                              <a href="modifier-reservation.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Modifier</a>
+                              <a href="actions/supprimermenuaction.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Supprimer</a>
                             </div>
                           </div>
                   </div>
@@ -62,7 +61,15 @@ require('actions/showallbooked.php');
 
                       
 
-                </div>                             
+                </div>
+
+                <br>
+                <div class="butonneded" >
+
+<a href="./reservation.php" class="btn btn-dark" >Ajouter une reservation</a>
+
+</div>
+                                        
                
 
 
@@ -70,7 +77,8 @@ require('actions/showallbooked.php');
          
 
             
-
+            <!-- footer -->
+            <?php include 'includes/footer.php' ; ?>
 
     <!-- Script -->
       <script src="//code.jquery.com/jquery-1.12.4.js"></script>

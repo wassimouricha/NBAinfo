@@ -1,12 +1,6 @@
-<?php 
-
-require('actions/securiteadmin.php');
-require('actions/showallbooked.php');
-
-
-   
+<?php session_start(); 
+require('actions/showalluserprofilaction.php');
 ?>
-
 
 
 <!DOCTYPE html>
@@ -24,36 +18,29 @@ require('actions/showallbooked.php');
             <?php include 'includes/sidebar.php' ; ?>
            
             <div class="containered">
-             
+                <ul class="listemenud">
+                 <li> <a href="index.php"> <i class="fa-solid fa-calendar"> <span> Accueil </span>  </i></a>  </li>
+                </ul>
                 <div class="titrecalend">
                   <h1 >
-                    Voici toutes les réservations
+                    Voici les Profils
                   </h1>
                   
                 </div>
                 <!-- mon tableau de carte -->
                 <div class="cardus">
                  
-               
                   <?php 
-                        while($booked = $getAllTheBooked->fetch()){
+                        while($ausers = $getAllTheProfile->fetch()){
                             ?>
                              <div class="cardass">
-                     
+                             <?= '<img class="cardus_image" src="data:image/png|image/jpeg|image/gif|image/jpg;base64,' . base64_encode( $ausers['binu'] ) . '" />'; ?>
                           <div class="cardus_content">
-                            <p> Date :  <?php echo $booked['date'];  ?>  </p>
-                            <p> Heure :  <?php echo $booked['heure'];  ?></p>
-                            <p> Nom : <?php echo $booked['nom'];  ?></p>
-                            <p> E-mail : <?php echo $booked['email'];  ?></p>
-                            <p> Type : <?php echo $booked['loge'];  ?></p>
+                            <p>Pseudo :  <?php echo $ausers['pseudo'];  ?>  </p>
+                            <p> Nom : <?php echo $ausers['nom'];  ?></p>
+                            <p> Prénom : <?php echo $ausers['prenom'];  ?></p>
                           </div>
-                          <div class="card_info">
-                          
-                            <div>
-                              <a href="modifier-reservation.php?id=<?php echo $booked['id']; ?>" class="cardus_link"> Modifier</a>
-                              <a href="actions/supprimermenuactionadmin.php?id=<?php echo $booked['id']; ?>" class="cardus_link"> Supprimer</a>
-                            </div>
-                          </div>
+                        
                   </div>
                              <?php 
                         }
@@ -61,8 +48,8 @@ require('actions/showallbooked.php');
                   ?>
 
                       
-
-                </div>                             
+                </div>
+                         
                
 
 
@@ -70,7 +57,8 @@ require('actions/showallbooked.php');
          
 
             
-
+            <!-- footer -->
+            <?php include 'includes/footer.php' ; ?>
 
     <!-- Script -->
       <script src="//code.jquery.com/jquery-1.12.4.js"></script>
