@@ -32,7 +32,7 @@ require('actions/showallbooked.php');
                   
                 </div>
                 <!-- mon tableau de carte -->
-                <div class="cardus">
+                <div class="cardus2">
                  
                
                   <?php 
@@ -40,20 +40,20 @@ require('actions/showallbooked.php');
                             ?>
                              <div class="cardass">
                      
-                          <div class="cardus_content">
+                          <div class="card_container2">
                             <p> Date :  <?php echo $booked['date'];  ?>  </p>
                             <p> Heure :  <?php echo $booked['heure'];  ?></p>
                             <p> Nom : <?php echo $booked['nom'];  ?></p>
                             <p> E-mail : <?php echo $booked['email'];  ?></p>
                             <p> Type : <?php echo $booked['loge'];  ?></p>
                           </div>
-                          <div class="card_info">
+                         
                           
                             <div>
                               <a href="modifier-reservation.php?id=<?php echo $booked['id']; ?>" class="cardus_link"> Modifier</a>
                               <a href="actions/supprimermenuactionadmin.php?id=<?php echo $booked['id']; ?>" class="cardus_link"> Supprimer</a>
                             </div>
-                          </div>
+                      
                   </div>
                              <?php 
                         }

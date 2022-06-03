@@ -152,9 +152,32 @@
     }
 
 }
+/* écran entre 1300px et 1439px */
+@media screen and (min-width: 1300px)  and (max-width: 1439px) {
+
+
+    .lottiehome{
+        margin-left: 1058px;
+        margin-top: 363px;
+    }
+    .containerbeforus{
+        overflow: hidden;
+    }
+
+    .TextFlottant{
+        top: 450px;
+        left: 791px;
+        position: absolute;
+
+    }
+    
+
+
+
+}
 
 /* écran entre 1024px et 1439px */
-@media screen and (min-width: 1024px)  and (max-width: 1439px) {
+@media screen and (min-width: 1024px)  and (max-width: 1299px) {
 
     .form-container{
         top: 20px;
@@ -162,8 +185,8 @@
 
     }
     .lottiehome{
-        margin-left: 850px;
-        margin-top: 210px;
+        margin-left: 771px;
+        margin-top: 363px;
     }
     .containerbeforus{
         overflow: hidden;
@@ -180,7 +203,7 @@
         overflow: hidden;
     }
     .TextFlottant{
-        top: 370px;
+        top: 450px;
         left: 490px;
         position: absolute;
         z-index: 100;
@@ -198,7 +221,7 @@
     }
 
 }
-/* écran entre 768px et 1023px */
+/* écran entre 768px et 1299 */
 @media screen and (min-width: 768px)  and (max-width: 1023px) {
 
     .form-container{
@@ -314,6 +337,13 @@ body{
 /* écran entre 425px et 767px */
 @media screen and (min-width: 425px)  and (max-width: 767px){
 
+    .butonneded{
+
+        margin-bottom: 20px;
+        margin-left: 45px;
+        
+    }
+
     .form-container{
         top: -10px;
         left: 50px;
@@ -406,6 +436,25 @@ body{
 }
  /* écran entre 375px et 424px */
 @media screen and (min-width: 375px)  and (max-width: 424px){
+
+    .cardass{
+        width: 270px;
+        margin-left: 80px;
+    }
+    
+    .cardus_link{
+        width: 300px;
+    }
+
+
+    .butonneded{
+        margin-bottom: 20px;
+        margin-left: 45px;
+    }
+
+    .btn{
+        width: 265px;
+    }
 
     .form-container{
         top: -16px;
@@ -508,6 +557,25 @@ body{
 }
 
 @media screen and (min-width: 320px)  and (max-width: 374px){
+
+    .cardass{
+        width: 200px;
+        margin-left: 30px;
+    }
+    
+    .cardus_link{
+        width: 200px;
+    }
+
+    .butonneded{
+        margin-bottom: 20px;
+        margin-left: 45px;
+    }
+
+    .btn{
+        width: 200px;
+    }
+
 
     .form-container{
         top: -16px;

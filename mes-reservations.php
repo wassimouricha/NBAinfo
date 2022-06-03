@@ -30,7 +30,7 @@ require('actions/mesmenusaction.php');
                   
                 </div>
                 <!-- mon tableau de carte -->
-                <div class="cardus">
+                <div class="cardus2">
                   
                
                   <?php 
@@ -39,12 +39,12 @@ require('actions/mesmenusaction.php');
                              <div class="cardass">
                      
                           <div class="card_container2">
-                            <p> <?php echo $menus['date'];  ?>  </p>
-                            <p> <?php echo $menus['heure'];  ?></p>
-                            <p> <?php echo $menus['nom'];  ?></p>
-                            <p> <?php echo $menus['email'];  ?></p>
-                            <p> <?php echo $menus['equipe'];  ?></p>
-                            <p> <?php echo $menus['loge'];  ?></p>
+                            <p>Date : <?php echo $menus['date'];  ?>  </p>
+                            <p>Heure : <?php echo $menus['heure'];  ?></p>
+                            <p>Nom : <?php echo $menus['nom'];  ?></p>
+                            <p>Mail :  <?php echo $menus['email'];  ?></p>
+                            <p>Equipe : <?php echo $menus['equipe'];  ?></p>
+                            <p>Loge : <?php echo $menus['loge'];  ?></p>
                           </div>
 
                         
@@ -76,9 +76,7 @@ require('actions/mesmenusaction.php');
               </div>
          
 
-            
-            <!-- footer -->
-            <?php include 'includes/footer.php' ; ?>
+
 
     <!-- Script -->
       <script src="//code.jquery.com/jquery-1.12.4.js"></script>

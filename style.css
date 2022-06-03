@@ -103,22 +103,7 @@ form{
  
 }
 
-/*bootstrap style */
-.mb-3{
-    text-align: center;
-    line-height: 1;
-    font-weight: 500;
-    font-size: 1.1rem;
-}
-form .sign-in-form{
-    z-index: 2;
 
-}
-
-form .sign-up-form{
-    z-index: 2;
-}
-field
 .titreformulaire{
     font-size: 2.2rem;
     color: black;
@@ -210,6 +195,13 @@ field
     margin-top: 5px;
 }
 
+.butonneded{
+    text-align: center;
+    width: 100%;
+}
+
+
+
 .TextFlottant{
     top: 350px;
     left: 900px;
@@ -246,6 +238,7 @@ color: white;
 .btn{
     color: black;
     background-color: crimson;
+    text-align: center;
 }
 
 .imagelogo{
@@ -785,19 +778,23 @@ font-weight: 800;
     grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
     grid-gap: 40px;
     padding: 20px;
+    margin: 20px;
     place-items: center center;
    
 }
 
 .cardus2{
-    margin:  20px;
-    /* ou 0 auto c'est selon */
-    max-width: 1000px;
-    margin-left: 150px;
+  
+
     display: grid;
     /* en dessous on indique les parametres de sa grille */
-    grid-template-columns: repeat(auto-fill, minmax(225px, 225px));
-    gap: 150px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 40px;
+    padding: 20px;
+    margin: 20px;
+      /* ou 0 auto c'est selon */
+    place-items: center center;
+   
 }
 
 .cardass{
@@ -914,10 +911,7 @@ color: black;
     color: crimson;
 }
 
-.butonneded{
-    margin: 0 auto;
-    
-}
+
 
 /* Bouton night mode */
 
