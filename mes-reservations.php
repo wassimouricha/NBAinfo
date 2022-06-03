@@ -38,7 +38,7 @@ require('actions/mesmenusaction.php');
                             ?>
                              <div class="cardass">
                      
-                          <div class="cardus_content">
+                          <div class="card_container2">
                             <p> <?php echo $menus['date'];  ?>  </p>
                             <p> <?php echo $menus['heure'];  ?></p>
                             <p> <?php echo $menus['nom'];  ?></p>
@@ -46,13 +46,13 @@ require('actions/mesmenusaction.php');
                             <p> <?php echo $menus['equipe'];  ?></p>
                             <p> <?php echo $menus['loge'];  ?></p>
                           </div>
-                          <div class="card_info">
+
                         
                             <div>
                               <a href="modifier-reservation.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Modifier</a>
                               <a href="actions/supprimermenuaction.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Supprimer</a>
                             </div>
-                          </div>
+        
                   </div>
                              <?php 
                         }
@@ -65,7 +65,7 @@ require('actions/mesmenusaction.php');
 
                 <br>
                 <div class="butonneded" >
-
+                        <!-- bouton bootstrap -->
 <a href="./reservation.php" class="btn btn-dark" >Ajouter une reservation</a>
 
 </div>

@@ -18,9 +18,7 @@ require('actions/showalluserprofilaction.php');
             <?php include 'includes/sidebar.php' ; ?>
            
             <div class="containered">
-                <ul class="listemenud">
-                 <li> <a href="index.php"> <i class="fa-solid fa-calendar"> <span> Accueil </span>  </i></a>  </li>
-                </ul>
+             
                 <div class="titrecalend">
                   <h1 >
                     Voici les Profils
@@ -34,12 +32,14 @@ require('actions/showalluserprofilaction.php');
                         while($ausers = $getAllTheProfile->fetch()){
                             ?>
                              <div class="cardass">
-                             <?= '<img class="cardus_image" src="data:image/png|image/jpeg|image/gif|image/jpg;base64,' . base64_encode( $ausers['binu'] ) . '" />'; ?>
-                          <div class="cardus_content">
-                            <p>Pseudo :  <?php echo $ausers['pseudo'];  ?>  </p>
+                            
+                          <div class="card_container">
+                          <?= '<img  src="data:image/png|image/jpeg|image/gif|image/jpg;base64,' . base64_encode( $ausers['binu'] ) . '" />'; ?>
+                          
+                          </div>
+                          <p>Pseudo :  <?php echo $ausers['pseudo'];  ?>  </p>
                             <p> Nom : <?php echo $ausers['nom'];  ?></p>
                             <p> Prénom : <?php echo $ausers['prenom'];  ?></p>
-                          </div>
                         
                   </div>
                              <?php 
