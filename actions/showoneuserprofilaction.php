@@ -23,7 +23,7 @@ if(isset($_GET['id']) AND !empty($_GET['id'])){
 
                 //recuperer tout les menu de l'utilisateur 
                 //on selectionne tout les menu de la table menu qui ont l'id_auteur qui correspond à l'id dans l'url (order by desc pour mettre par odre décroissant)
-                $gethismenu = $bdd->prepare('SELECT * FROM menu WHERE id_auteur = ?  ORDER BY id DESC');
+                $gethismenu = $bdd->prepare('SELECT * FROM booking WHERE id_auteur = ?  ORDER BY id DESC');
                 $gethismenu->execute(array($idofuser));
 
         }else{
