@@ -2,7 +2,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <!-- En tete -->
 <?php include 'includes/head.php' ; ?>
@@ -11,7 +11,7 @@
 <body class="main">
 
              <!-- SplashScreen -->
-             <?php include 'includes/splashscreen.php' ; ?>
+             <?php include 'includes/splashscre.php' ; ?>
             <!-- sidebar -->
             <?php include 'includes/sidebar.php' ; ?>
             <!-- Mot flottant -->
