@@ -2,7 +2,7 @@
 //try catch fonctionne comme une fonction if else
 try{
     
-    $bdd = new PDO('mysql:host=localhost;dbname=bustronomeco;charset=utf8;', 'root', '');
+    $bdd = new PDO('mysql:host=localhost;dbname=nba;charset=utf8;', 'root', '');
 }catch(Exception $e){
     die('une erreur à été trouvé : ' . $e->getMessage());  //je concatene le message avec la variable $e qui stock l'exception puis get message pour récuperer le message
 }
