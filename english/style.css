@@ -595,7 +595,7 @@ z-index: 10;
     z-index: 10;
     transition: ease-in-out;
     flex-direction: column;
-   background:  no-repeat center url(./assets/4765949.jpg);
+   background:  black;
    overflow-y: scroll;
    overflow-x: hidden;
 }
@@ -911,6 +911,121 @@ color: black;
     color: crimson;
 }
 
+/* carte de la page offre */
+
+
+
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 4rem 8vw;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .card {
+    position: relative;
+    display: block;  /* display block  met l'élément dans un block et prend toute la largeur */
+    height: 100%;  
+    border-radius: 40px;
+    overflow: hidden;
+    text-decoration: none;
+  }
+  
+  .card__image {      
+     min-height: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  .card__overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;      
+    border-radius:40px;    
+    background-color: #fff ;      
+    transform: translateY(100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card:hover .card__overlay {
+    transform: translateY(0);
+  }
+  
+  .card__header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+    border-radius:40px 0 0 0;    
+    background-color: #fff ;
+    transform: translateY(-100%);
+    transition: .2s ease-in-out;
+  }
+  
+  .card__arc {
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    bottom: 100%;
+    right: 0;      
+    z-index: 1;
+  }
+  
+  .card__arc path {
+    fill: #fff ;
+
+  }       
+  
+  .card:hover .card__header {
+    transform: translateY(0);
+  }
+  
+  .card__thumb {
+    flex-shrink: 0;
+    width: 50px;
+    height: 50px;      
+    border-radius: 50%;      
+  }
+  
+  .card__title {
+    font-size: 1em;
+    margin: 0 0 .3em;
+    color: black;
+    font-weight: bold;
+  }
+  
+  .card__tagline {
+    display: block;
+    margin: 1em 0;
+    font-family: "MockFlowFont";  
+    font-size: .8em; 
+    color: #D7BDCA;  
+  }
+  
+  .card__status {
+    font-size: .8em;
+    color: gold;
+  }
+  
+  .card__description {
+    padding: 0 2em 2em;
+    margin: 0;
+    color: black;
+    font-family: "MockFlowFont";   
+    display: -webkit-box; /* -webkit-box s'étend pour remplir la boîte englobante, dans la direction indiquée par la disposition de la boîte.  */
+    -webkit-box-orient: vertical; /* -webkit-box-orient permet de spécifier le type d'ordonnancement (en colonne ou en ligne) des éléments flexibles dans unbe flexbox */
+    -webkit-line-clamp: 3;  /* -webkit-line-clamp permet de limiter l'affichage du contenu d'un bloc à un nombre donné de lignes. */
+    overflow: hidden;
+  }    
+
+  
 
 
 /* Bouton night mode */

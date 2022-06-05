@@ -179,6 +179,10 @@
 /* écran entre 1024px et 1439px */
 @media screen and (min-width: 1024px)  and (max-width: 1299px) {
 
+    .cards {
+        margin: 4rem 12vw;
+      }
+
     .form-container{
         top: 20px;
         left: 135px;
@@ -224,6 +228,10 @@
 /* écran entre 768px et 1299 */
 @media screen and (min-width: 768px)  and (max-width: 1023px) {
 
+    .cards {
+        margin: 4rem 14vw;
+      
+    }
     .form-container{
         top: -11px;
         left: 135px;
@@ -337,6 +345,15 @@ body{
 /* écran entre 425px et 767px */
 @media screen and (min-width: 425px)  and (max-width: 767px){
 
+    .titrecalend h1{
+        font-size: 25px;
+    }
+
+    .cards {
+        margin: 4rem 25vw;
+      
+    }
+
     .butonneded{
 
         margin-bottom: 20px;
@@ -436,6 +453,21 @@ body{
 }
  /* écran entre 375px et 424px */
 @media screen and (min-width: 375px)  and (max-width: 424px){
+
+    .titrecalend h1{
+        font-size: 20px;
+    }
+
+
+    .cards {
+        margin: 4rem 25vw;
+      
+    }
+
+    .card{
+        width: 275px;
+
+    }
 
     .cardass{
         width: 270px;
@@ -558,9 +590,38 @@ body{
 
 @media screen and (min-width: 320px)  and (max-width: 374px){
 
+    .card__title {
+        font-size: 10px ;
+
+      }
+
+      .card__status {
+        font-size: 10px ;
+
+      }
+      
+    .card__header{
+        height: 25px;
+    }
+    .titrecalend h1{
+        font-size: 15px;
+    }
+
+
+
     .cardass{
         width: 200px;
         margin-left: 30px;
+    }
+
+    .cards {
+        margin: 4rem 33vw;
+      
+    }
+
+    .card{
+        width: 200px;
+
     }
     
     .cardus_link{

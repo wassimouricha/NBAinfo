@@ -21,68 +21,62 @@
                
                 <div class="titrecalend">
                   <h1 >
-                    Here's the differents lodge
+                    Here are our Lodge offers 
                   </h1>
                   
                 </div>
                 <!-- mon tableau de carte -->
-                <div class="cardus2">
-             
-
-                  <div class="cardmorph">
-                  <div class="cardmorph_content">
-                    <div class="cardmorph_picture">
-                    <img src="./assets/loges-chase-center.jpg" alt="" >
-                    </div>
-                    <div class="cardmorph_picture2">
-                    <img src="./assets/Blue_circle_frame.png" alt="" >
-                    </div>
-                      
-                        <br>
-                        <p class="colorcardtext"> Classical Lodge Offer</p>
-                            <p class="colorcardtext"> The cheapest Lodge you can get </p>
-                            <p class="colorcardtext"> Price : 90 $</p>
-                        
+                                    <ul class="cards">
+                      <li>
+                        <a href="#" class="card">
+                          <img src="assets/loges-chase-center.jpg" class="card__image" alt="" />
+                          <div class="card__overlay">
+                            <div class="card__header">
+                    
+                              <img class="card__thumb" src="assets/NBA_Logo.svg" alt="" />
+                              <div class="card__header-text">
+                                <h3 class="card__title">Classical Lodge</h3>            
+                                <span class="card__status">Available</span>
+                              </div>
+                            </div>
+                            <p class="card__description">The most classic and modest lodge giving a good experience </p>
                           </div>
-                         
-                  </div>
-                  <div class="cardmorph">
-                  <div class="cardmorph_content">
-                    <div class="cardmorph_picture">
-                    <img src="./assets/FTG-NBAMostPoshPrivateClubs-BarclaysCenter-CreditBruceDamote.jpg" alt="" >
-                    </div>
-                    <div class="cardmorph_picture3">
-                    <img src="./assets/white-circle.png" alt="" >
-                    </div>
-                      
-                        <br>
-                        <p class="colorcardtext"> Offre Loge VIP</p>
-                            <p class="colorcardtext"> Loge VIP Classieuse </p>
-                            <p class="colorcardtext"> Prix : 350 $</p>
+                        </a>      
+                      </li>
+                      <li>
+                        <a href="#" class="card">
+                          <img src="assets/FTG-NBAMostPoshPrivateClubs-BarclaysCenter-CreditBruceDamote.jpg" class="card__image" alt="" />
+                          <div class="card__overlay">        
+                            <div class="card__header">
+               
+                              <img class="card__thumb" src="assets/NBA_Logo.svg" alt="" />
+                              <div class="card__header-text">
+                                <h3 class="card__title">VIP Lodge</h3>
+                                <span class="card__status">Available</span>
+                              </div>
+                            </div>
+                            <p class="card__description">Lodge of a higher standing, giving access to 5 star meals </p>
                           </div>
-                         
-                  </div>
-                  <div class="cardmorph">
-                  <div class="cardmorph_content">
-                    <div class="cardmorph_picture">
-                    <img src="./assets/FTG-NBAMostPoshPrivateClubs-BarclaysCenter-CreditBruceDamote.jpg" alt="" >
-                    </div>
-                    <div class="cardmorph_picture2">
-                    <img src="./assets/circle-41674.png" alt="" >
-                    </div>
-                      
-                        <br>
-                            <p class="colorcardtext"> Offre Loge VIP Premium </p>
-                            <p class="colorcardtext"> Loge Magic Johnson </p>
-                            <p class="colorcardtext"> Prix : 750 $</p>
+                        </a>
+                      </li>
+
+                      <li>
+                        <a href="#" class="card">
+                          <img src="assets/nbavip.jpeg" class="card__image" alt="" />
+                          <div class="card__overlay">
+                            <div class="card__header">
+               
+                              <img class="card__thumb" src="assets/NBA_Logo.svg" alt="" />
+                              <div class="card__header-text">
+                                <h3 class="card__title">Premium Lodge</h3>
+                                <span class="card__status">Available</span>
+                              </div>          
+                            </div>
+                            <p class="card__description">Lodge of very high standing  , opening access to a jacuzzi in addition to meals 5 stars </p>
                           </div>
-                         
-                  </div>
-
-                 
-
-                      
-                </div>
+                        </a>
+                      </li>    
+                    </ul>
                 <br> 
                     
                                         
