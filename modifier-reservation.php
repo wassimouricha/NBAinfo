@@ -45,13 +45,13 @@ require('actions/editmenuaction.php');
                                     ?>
                                      <form class="container" method="POST" enctype="multipart/form-data"> <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
                                      <div class="mb-3">
-                         <label for="exampleInputEmail1" class="form-label">Veuillez selectionner une date :</label>
+                         <label for="exampleInputEmail1" class="formlabel2">Veuillez selectionner une date :</label>
                          <input type="text"  name="date"  value="<?= $titremenu; ?> " >    
                          </div>
                    
 
                          <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Veuillez selectionner une heure :</label>
+                <label for="exampleInputEmail1" class="formlabel2">Veuillez selectionner une heure :</label>
                     <select name="heure" id="selecthours" >
                    
                             <option  name="heure" value="13h00"><p>13:00</p></option>
@@ -65,7 +65,7 @@ require('actions/editmenuaction.php');
 
                       
                 <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">Veuillez selectionner un type de loge :</label>
+                <label for="exampleInputEmail1" class="formlabel2">Veuillez selectionner un type de loge :</label>
                     <select name="loge" id="selecthours">
                             
                             <option  name="rloge" value="Loge classique"><p>Loge classique</p></option>
@@ -78,15 +78,15 @@ require('actions/editmenuaction.php');
                           
                           
                           <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">nom</label>
+                              <label for="exampleInputEmail1" class="formlabel2">nom</label>
                               <textarea  class="form-control" name="nom" > <?= $contentmenu; ?></textarea>
                           </div>
                           <div class="mb-3">
-                              <label for="exampleInputEmail1" class="form-label">email</label>
+                              <label for="exampleInputEmail1" class="formlabel2">email</label>
                               <textarea  class="form-control" name="email" > <?= $imagemenu; ?></textarea>
                           </div>
                           <div class="mb-3">
-                <label for="exampleInputEmail1" class="form-label">"Veuillez selectionner une équipe pour ces playoffs (match à domicile pour l'équipe choisis):"</label>
+                <label for="exampleInputEmail1" class="formlabel2">"Veuillez selectionner une équipe pour ces playoffs (match à domicile pour l'équipe choisis):"</label>
                     <select name="equipe" id="selecthours">
                        
                             <option  name="equipe" value="Heat"><p>Heat</p></option>

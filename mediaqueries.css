@@ -261,6 +261,12 @@
         
         width: 300px;
     }
+
+    .formlabel2{
+
+        width: 300px;
+
+    }
 .motflottantsolo{
     top: 10px;
     left: 100px;
@@ -404,6 +410,14 @@ body{
         
         width: 300px;
     }
+
+    .formlabel2{
+
+        width: 300px;
+
+    }
+
+    
     .titreformulaire{
         font-size: 20px;
     }
@@ -468,6 +482,35 @@ body{
  /* écran entre 375px et 424px */
 @media screen and (min-width: 375px)  and (max-width: 424px){
 
+    /* style bootstrap */
+    .container{
+        margin-left: 110px!important;
+        width: 244px!important;
+        margin-top: -50px!important;
+    }
+
+        input{
+            text-align: center;
+            width: 353px;
+        }
+
+        select{
+            text-align: center;
+            width: 353px;
+        }
+
+        textarea.form-control{
+            text-align: center;
+        }
+
+        .formlabel2{
+            font-size: 12px;
+            width: 300px;
+            color: white;
+            margin-left: 58px;
+        }
+    
+/* fin style bootstrap */
     .signin-signup{
         left: 55%;
         top: 45%;
@@ -556,7 +599,8 @@ body{
         color: black;
         margin-left: 136px;
     }
-
+    
+  
     form{
         width: 200px;
     }
@@ -628,6 +672,36 @@ body{
 }
 
 @media screen and (min-width: 320px)  and (max-width: 374px){
+
+        /* style bootstrap */
+        .container{
+            margin-left: 102px!important;
+            width: 199px!important;
+            margin-top: -50px!important;
+        }
+    
+            input{
+                text-align: center;
+                width: 353px;
+            }
+    
+            select{
+                text-align: center;
+                width: 353px;
+            }
+    
+            textarea.form-control{
+                text-align: center;
+            }
+    
+            .formlabel2{
+                font-size: 12px;
+                width: 177px;
+                color: white;
+                margin-left: 82px;
+            }
+        
+    /* fin style bootstrap */
 
     .sign-in-form a{
         margin-left: 119px;
@@ -731,6 +805,8 @@ body{
         color: black;
         margin-left: 136px;
     }
+
+
 
     form{
         width: 200px;
