@@ -28,7 +28,7 @@ if(isset($errorMsg)){echo '<p class="messagus">'.$errorMsg.'</p>'; }  ?>
     <!-- Formulaire version plus belle -->
     <div class="form-container" >
         <div class="signin-signup">
-            <form  class="sign-in-form" method="POST" enctype="multipart/form-data">
+            <form  class="sign-in-form2" method="POST" enctype="multipart/form-data">
                 <h2 class="titreformulaire"> Inscription</h2>
                 <div class="input-field">
                     <i class="fas fa-user"></i>

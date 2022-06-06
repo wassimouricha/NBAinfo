@@ -312,8 +312,12 @@ a{
     text-decoration: none;
 }
 
+.sign-in-form2 a {
+    text-decoration: none;
+}
+
 a p{
-    color: white;
+    color: black;
     text-decoration: none;
     transition: 0.5 ease;
     outline: none;

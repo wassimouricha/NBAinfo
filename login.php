@@ -38,7 +38,7 @@
                         <input type="password" placeholder="Mot de passe" name="password">
                     </div>
                     <button type="submit" class="btnform" name="validate">Se connecter</button>
-                    <a href="page_de_connexion.php"><p >pas de compte ? Inscrivez-vous !</p></a>
+                    <a href="inscription.php"><p >pas de compte ? Inscrivez-vous !</p></a>
                 </form>
             </div>
         </div>

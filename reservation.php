@@ -93,7 +93,7 @@
 
 
          
-                <input type="submit" name="validate"  class="btnform" value="Reservez">
+                <input type="submit" name="validate"  class="btnform" value="Reserver">
                 <br>
                 <br>
                 

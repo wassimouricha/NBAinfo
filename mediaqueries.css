@@ -345,6 +345,14 @@ body{
 /* écran entre 425px et 767px */
 @media screen and (min-width: 425px)  and (max-width: 767px){
 
+    .sign-in-form a{
+        margin-left: 85px;
+    }
+
+    .sign-in-form a p{
+        font-size: 12px;
+    }
+
     .titrecalend h1{
         font-size: 25px;
     }
@@ -454,6 +462,24 @@ body{
  /* écran entre 375px et 424px */
 @media screen and (min-width: 375px)  and (max-width: 424px){
 
+    .signin-signup{
+        left: 55%;
+        top: 45%;
+    }
+
+    .sign-in-form a{
+        margin-left: 85px;
+    }
+
+    .sign-in-form2 a{
+       width: 151px;
+    }
+
+
+    .sign-in-form a p{
+        font-size: 12px;
+    }
+
     .titrecalend h1{
         font-size: 20px;
     }
@@ -513,9 +539,16 @@ body{
         height: 40px;
     }
 
+      #upload{
+        font-size: 8px;
+        margin-left: 119px;
+    }
+
     .form-label {
         font-size: 12px;
         width: 300px;
+        color: black;
+        margin-left: 136px;
     }
 
     form{
@@ -589,6 +622,22 @@ body{
 }
 
 @media screen and (min-width: 320px)  and (max-width: 374px){
+
+    .sign-in-form a{
+        margin-left: 119px;
+    }
+
+    .sign-in-form a p{
+        font-size: 10px;
+    }
+
+    .sign-in-form2 a{
+        margin-left: 98px;
+    }
+
+    .sign-in-form2 a p{
+        font-size: 8px;
+    }
 
     .card__title {
         font-size: 10px ;
@@ -665,9 +714,16 @@ body{
     font-size: 13px;
     }
 
+    #upload{
+        font-size: 8px;
+        margin-left: 119px;
+    }
+
     .form-label {
         font-size: 12px;
         width: 300px;
+        color: black;
+        margin-left: 136px;
     }
 
     form{
@@ -675,7 +731,7 @@ body{
     }
 
     .signin-signup{
-        left: 55%;
+        left: 45%;
        
     }
 

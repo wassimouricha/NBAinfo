@@ -128,9 +128,7 @@ require('actions/editmenuaction.php');
               </div>
          
 
-            
-            <!-- footer -->
-            <?php include 'includes/footer.php' ; ?>
+
 
     <!-- Script -->
       <script src="//code.jquery.com/jquery-1.12.4.js"></script>
