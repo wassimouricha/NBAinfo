@@ -46,7 +46,7 @@ require('actions/editmenuaction.php');
                                      <form class="container" method="POST" enctype="multipart/form-data"> <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
                                      <div class="mb-3">
                          <label for="exampleInputEmail1" class="form-label">Veuillez selectionner une date :</label>
-                         <input type="text"  name="date" id="datepicker"  value="<?= $titremenu; ?> " >    
+                         <input type="text"  name="date"  value="<?= $titremenu; ?> " >    
                          </div>
                    
 
@@ -133,9 +133,7 @@ require('actions/editmenuaction.php');
     <!-- Script -->
       <script src="//code.jquery.com/jquery-1.12.4.js"></script>
       <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-      <script>
-      $( "#datepicker" ).datepicker();
-      </script>
+
       <script src="./script.js"></script>
 </body>
 </html>
