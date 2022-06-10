@@ -118,7 +118,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="https://www.basketusa.com/">
                 <i class="fas fa-chart-bar"></i>
                     <span class="nav-item"> Actualités NBA </span>
                 </a>
