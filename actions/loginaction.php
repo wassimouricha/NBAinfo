@@ -21,7 +21,8 @@ if(isset($_POST['validate'])){
             //récuperer les données de l'utilisateur
             if($checkIfUserExist->rowCount() > 0){
                 //on va également verifier le mot de passe
-                $usersInfos =  $checkIfUserExist->fetch();  //qui va nous permettre de recuperer toutes les donénes sous forme d'un tableau et on les stock dans la variable
+                $usersInfos =  $checkIfUserExist->fetch();  
+                //qui va nous permettre de recuperer toutes les donénes sous forme d'un tableau et on les stock dans la variable
                     if(password_verify($user_password, $usersInfos['mdp'])){
                         $_SESSION['auth'] = true;
                         $_SESSION['id'] =  $usersInfos['id'];

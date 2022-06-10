@@ -1,16 +1,8 @@
-<!-- MVC : 
 
-M : le model c'est ce qui va se charger de récuperer des données  et de faire des requetes 
-V : View (vue) sera tout ce qui est affiché à l'utilisateur 
-C :   le controlleur , il va controller toute les données , le controlleur va aller appeller le model , récuperer les données puis les afficher 
-
--->
-
-
-<!-- ici le code on va l'inclure dans page_de_connexion -->
+<!-- ici le code on va l'inclure dans inscription.php -->
 <?php
 session_start();
-require ('actions/database.php'); //quand il inclut la databse il inclut également la sessionstart
+require ('actions/database.php'); //quand on inclut la database on inclut également la sessionstart
 
 // je vais vérifier si l'utilisateur clique bien sur le bouton
 //validation du formulaire
@@ -19,7 +11,7 @@ if(isset($_POST['validate'])){
 
         //verifier si l'user à bien completer tout les champs
     if(!empty($_POST['pseudo']) AND !empty($_POST['lastname']) AND !empty($_POST['firstname']) AND !empty($_POST['password']) ){
-            //ici on déclare nos varibales qui vont contenir nos champs 
+            //ici on déclare nos variables qui vont contenir nos champs 
             //les données de l'user
         $user_pseudo = htmlspecialchars($_POST['pseudo']);
         $user_lastname = htmlspecialchars($_POST['lastname']);
@@ -29,15 +21,18 @@ if(isset($_POST['validate'])){
         //il prend deux parametres le champs de base de donnée password et ensuite le type de cryptage
 
             //verifier si l'utilisateur existe déjà
-        $checkIfUserAlreadyExists = $bdd ->prepare('SELECT pseudo FROM users WHERE pseudo = ?');  // je fais une requete sql pour récuperer les données qui se trouve dans la table
-        // je déclare donc ici que je veux récuperer toutes les données (avec l'étoile *) ou le pseudo dans la base de données users qui possède déjà le pseudo en questions 
+        $checkIfUserAlreadyExists = $bdd ->prepare('SELECT pseudo FROM users WHERE pseudo = ?');  
+      // je fais une requete sql pour récuperer les données qui se trouve dans la table
+      // je déclare donc ici que je veux récuperer toutes les données (avec l'étoile *) ou le pseudo dans la base de données users qui possède déjà le pseudo en questions 
         $checkIfUserAlreadyExists->execute(array($user_pseudo));
 
-        if($checkIfUserAlreadyExists->rowCount() == 0){
-
+        if($checkIfUserAlreadyExists->rowCount() == 0){ 
+            //rowcount va compter le nombre de donnée récuperer dans la requete , donc si aucune donnée n'a été trouvé alors mon code s'éxecute
             //inserer l'utilisateur dans le bdd
-            $insertUserOnWebsite = $bdd->prepare('INSERT INTO users(pseudo, nom, prenom, mdp, binu) VALUES(?, ?, ?, ?, ?)');  //avec les ? on indique combien de champs on veut récuperer
-            $insertUserOnWebsite->execute(array($user_pseudo, $user_lastname, $user_firstname, $user_password, $user_pic));  //on execute le requete en indiquant quelle variable il faut récuperer
+            $insertUserOnWebsite = $bdd->prepare('INSERT INTO users(pseudo, nom, prenom, mdp, binu) VALUES(?, ?, ?, ?, ?)'); 
+             //avec les ? on indique combien de champs on veut récuperer
+            $insertUserOnWebsite->execute(array($user_pseudo, $user_lastname, $user_firstname, $user_password, $user_pic));  
+            //on execute le requete en indiquant quelle variable il faut récuperer
 
                 //recuperer les informations de l'utilisateur
             $getInfosOfThisUserReq = $bdd->prepare('SELECT id, pseudo, nom, prenom, binu FROM users WHERE nom = ? AND prenom = ? AND pseudo = ?  AND binu = ?');
@@ -65,3 +60,4 @@ if(isset($_POST['validate'])){
     }
 
 };
+

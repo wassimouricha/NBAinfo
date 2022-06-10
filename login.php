@@ -17,10 +17,7 @@
             <!-- formulaire -->
             <div class="containereform">
         
-            <?php 
 
-    if(isset($errorMsg)){echo '<p class="messagus">'.$errorMsg.'</p>'; }  ?>
-        <br> <br>
     <div class="containerloginform" > <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
      
 
@@ -29,6 +26,9 @@
             <div class="signin-signup">
                 <form  class="sign-in-form" method="POST">
                     <h2 class="titreformulaire"> Connexion</h2>
+                    <?php 
+                    if(isset($errorMsg)){echo '<p class="messagus">'.$errorMsg.'</p>'; }  ?>
+                        <br> <br>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
                         <input type="text" placeholder="Pseudo" name="pseudo">
