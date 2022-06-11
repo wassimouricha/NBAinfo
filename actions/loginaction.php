@@ -14,7 +14,7 @@ if(isset($_POST['validate'])){
 
             //on verifie si l'utilisateur existe
             $checkIfUserExist = $bdd->prepare('SELECT * FROM users WHERE pseudo = ?');  //select , requete sql pour selectionner des données de la table 
-            //* signifie toute les données
+            //* signifie toute les données de la table
             //cette requete recupere les données d'utilisateurs qui possède le meme pseudo 
             $checkIfUserExist->execute(array($user_pseudo));
                

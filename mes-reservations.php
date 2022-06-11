@@ -34,23 +34,23 @@ require('actions/mesreservationsaction.php');
                   
                
                   <?php 
-                        while($menus = $getAllTheMenu->fetch()){
+                        while($reser = $getAllTheRes->fetch()){
                             ?>
                              <div class="cardass">
                      
                           <div class="card_container2">
-                            <p>Date : <?php echo $menus['date'];  ?>  </p>
-                            <p>Heure : <?php echo $menus['heure'];  ?></p>
-                            <p>Nom : <?php echo $menus['nom'];  ?></p>
-                            <p>Mail :  <?php echo $menus['email'];  ?></p>
-                            <p>Equipe : <?php echo $menus['equipe'];  ?></p>
-                            <p>Loge : <?php echo $menus['loge'];  ?></p>
+                            <p>Date : <?php echo $reser['date'];  ?>  </p>
+                            <p>Heure : <?php echo $reser['heure'];  ?></p>
+                            <p>Nom : <?php echo $reser['nom'];  ?></p>
+                            <p>Mail :  <?php echo $reser['email'];  ?></p>
+                            <p>Equipe : <?php echo $reser['equipe'];  ?></p>
+                            <p>Loge : <?php echo $reser['loge'];  ?></p>
                           </div>
 
                         
                             <div>
-                              <a href="modifier-reservation.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Modifier</a>
-                              <a href="actions/supprimermenuaction.php?id=<?php echo $menus['id']; ?>" class="cardus_link"> Supprimer</a>
+                              <a href="modifier-reservation.php?id=<?php echo $reser['id']; ?>" class="cardus_link"> Modifier</a>
+                              <a href="actions/supprimerresaction.php?id=<?php echo $reser['id']; ?>" class="cardus_link"> Supprimer</a>
                             </div>
         
                   </div>

@@ -28,7 +28,7 @@
               
             <form class="form-container" method="POST"> <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
            
-
+      
                 <div class="input-field">
                         <i class="fas fa-user"></i>
                         <input type="text" placeholder="Nom" name="rname">
@@ -91,7 +91,9 @@
                         </select>
                     </div>
 
-
+                    <?php 
+                    if(isset($errorMsg)){echo '<p class="messagus">'.$errorMsg.'</p>'; }  ?>
+ 
          
                 <input type="submit" name="validate"  class="btnform" value="Reserver">
                 <br>

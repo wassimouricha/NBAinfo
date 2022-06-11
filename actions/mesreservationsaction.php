@@ -4,5 +4,5 @@
 
 require('actions/database.php');
 
-$getAllTheMenu = $bdd->prepare('SELECT id, date, heure, nom, email,equipe, loge FROM booking WHERE id_auteur = ? ORDER BY id DESC');
-$getAllTheMenu->execute(array($_SESSION['id']));
+$getAllTheRes = $bdd->prepare('SELECT id, date, heure, nom, email,equipe, loge FROM booking WHERE id_auteur = ? ORDER BY id DESC');
+$getAllTheRes->execute(array($_SESSION['id']));
