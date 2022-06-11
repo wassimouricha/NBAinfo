@@ -1,8 +1,8 @@
 
 
 <?php 
-require('actions/getinfomenuaction.php'); 
-require('actions/editmenuaction.php'); 
+require('actions/getinforesaction.php'); 
+require('actions/editresaction.php'); 
 
 ?>
 <!DOCTYPE html>
@@ -40,13 +40,13 @@ require('actions/editmenuaction.php');
 
                             <?php 
 
-                                if(isset($contentmenu)){
+                                if(isset($contentres)){
 
                                     ?>
                                      <form class="container" method="POST" enctype="multipart/form-data"> <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
                                      <div class="mb-3">
                          <label for="exampleInputEmail1" class="formlabel2">Veuillez selectionner une date :</label>
-                         <input type="text"  name="date"  value="<?= $titremenu; ?> " >    
+                         <input type="text"  name="date"  value="<?= $titreres; ?> " >    
                          </div>
                    
 
@@ -79,11 +79,11 @@ require('actions/editmenuaction.php');
                           
                           <div class="mb-3">
                               <label for="exampleInputEmail1" class="formlabel2">nom</label>
-                              <textarea  class="form-control" name="nom" > <?= $contentmenu; ?></textarea>
+                              <textarea  class="form-control" name="nom" > <?= $contentres; ?></textarea>
                           </div>
                           <div class="mb-3">
                               <label for="exampleInputEmail1" class="formlabel2">email</label>
-                              <textarea  class="form-control" name="email" > <?= $imagemenu; ?></textarea>
+                              <textarea  class="form-control" name="email" > <?= $imageres; ?></textarea>
                           </div>
                           <div class="mb-3">
                 <label for="exampleInputEmail1" class="formlabel2">"Veuillez selectionner une équipe pour ces playoffs (match à domicile pour l'équipe choisis):"</label>
