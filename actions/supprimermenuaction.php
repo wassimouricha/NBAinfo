@@ -1,6 +1,7 @@
 <?php
 // Session start va démarrer une session ou reprendre une session déjà existante 
 session_start();
+
 if(!isset($_SESSION['auth'])){
     header('Location : ../login.php');
 }
