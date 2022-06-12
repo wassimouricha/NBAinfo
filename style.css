@@ -485,6 +485,10 @@ z-index: 10;
     text-align: center;
     color: black;
 }
+.messagused{
+    text-align: center;
+    color: white;
+}
  /* progress bar */
 #progress-bar{
  position: absolute;

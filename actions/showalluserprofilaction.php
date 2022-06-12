@@ -1,6 +1,6 @@
 <?php
 
-//ici on va avec ces requetes prendre les données pour un auteur et les publié dans mes allprofile.php
+//ici on va avec ces requetes prendre les données de la table users et les publier dans mes allprofile.php
 
 require('actions/database.php');
 

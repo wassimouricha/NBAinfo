@@ -12,7 +12,7 @@ if(isset($_POST['validate'])){
         $mdp_saisi = htmlspecialchars($_POST['mdp']);
 
         if($pseudo_saisi == $pseudo_admin AND $mdp_saisi == $mdp_admin ){
-            $_SESSION['mdp'] = $mdp_saisi;
+            $_SESSION['mdp'] = true;
             header('Location: booked.php');
         }else{
             $errorMsg = " votre mdp admin n'est pas le bon vous n'etes pas l'admin";

@@ -32,7 +32,11 @@ require('actions/editresaction.php');
                   
                             <!-- code pour afficher les messages d'erreur ou de succès dans le -->
                       <?php if(isset($errorMsg)){ 
-                            echo '<p class="messagus">'.$errorMsg.'</p>'; 
+                        
+                            echo  '<div class="messagused">
+                            <p>'.$errorMsg.'</p>
+                            
+                          </div> '; 
                             } 
                             ?>
 
@@ -43,7 +47,8 @@ require('actions/editresaction.php');
                                 if(isset($contentres)){
 
                                     ?>
-                                     <form class="container" method="POST" enctype="multipart/form-data"> <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
+                                     <form class="container" method="POST" enctype="multipart/form-data">  <!-- enctype est le type d'encodage -->
+                                         <!-- ici j'ajoute la method HTTP post afin d'indiquer que je vais envoyer des informations -->
                                      <div class="mb-3">
                          <label for="exampleInputEmail1" class="formlabel2">Veuillez selectionner une date :</label>
                          <input type="text"  name="date"  value="<?= $titreres; ?> " >    

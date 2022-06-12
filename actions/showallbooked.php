@@ -1,6 +1,6 @@
 <?php
 
-//ici on va avec ces requetes prendre les données pour un auteur et les publié dans mes allprofile.php
+//ici on va avec ces requetes prendre toutes les données de la table booking et les publier dans mes booked.php
 
 require('actions/database.php');
 
