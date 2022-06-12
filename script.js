@@ -8,14 +8,16 @@ $(".containere > div:gt(0)").hide();
 setInterval(function() {  //setInterval  appelle une fonction qui va définir un interval en millisecond ,
   // la fonction se rejoueras indéfiniment tant que je n'aurais pas mis clearInterval() ou que la fenetre se ferme
   $('.containere > div:first') // je selectionne la première div
-  .fadeOut(1000) //fadeout est une fonction qui permet d'estomper au fur et a mesure puis cacher la div selectionné , le parametre de durée est en millisecondes (1s = 1000ms)
+  .fadeOut(1000) //fadeout est une fonction qui permet d'estomper au fur et a mesure puis cacher la div selectionné , 
+  //le parametre de durée est en millisecondes (1s = 1000ms)
   .next() //next pour passer la div suivante à l'interieur de la div container
   .fadeIn(1000) //meme principe que fadeout mais estompe pour faire apparaitre la div , le parametre de durée est en millisecondes également 
   .end() //termine la fonction actuel et la renvoie a son état précédent 
-  .appendTo('.containere'); //permet d'indiquer que l'on va inserer un élément (donc la fonction ici) à l'intérieur d'un élément selectionné et donc ici la class containere
+  .appendTo('.containere'); //permet d'indiquer que l'on va inserer un élément (donc la fonction ici) à l'intérieur d'un élément selectionné 
+  //et donc ici la class containere
 }, 5000); //parametre de durée total de la fonction en millisecondes également
 
-
+// Script pour le slider du texte dans index.php
 $(document).ready(function(){
   
   $(function(){
