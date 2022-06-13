@@ -31,7 +31,7 @@
                 <?php 
 
             if(isset($errorMsg)){echo '<p class="messagus">'.$errorMsg.'</p>'; }  ?>
-                <br> <br>
+                <br>
                 <div class="input-field">
                     <i class="fas fa-user"></i>
                     <input type="text" placeholder="Pseudo" name="pseudo">
@@ -84,8 +84,6 @@
    
 
 
-            <!-- footer -->
-            <?php include 'includes/footer.php' ; ?>
 
     <!-- Script -->
       <script src="./script.js"></script>

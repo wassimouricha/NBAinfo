@@ -124,7 +124,7 @@
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="mailto:nba@gmail.com">
                 <i class="fas fa-at"></i>
                     <span class="nav-item"> Nous contacter </span>
                 </a>
