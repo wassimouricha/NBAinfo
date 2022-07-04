@@ -9,7 +9,7 @@ require ('actions/database.php'); // on inclut la database
 if(isset($_POST['validate'])){
 //  ici on va verifier si toutes les champs ne sont pas vides
 
-        //verifier si l'user à bien completer tout les champs
+        //verifier si l'user à bien completé tous les champs
     if(!empty($_POST['pseudo']) AND !empty($_POST['lastname']) AND !empty($_POST['firstname']) AND !empty($_POST['password']) ){
             //ici on déclare nos variables qui vont contenir nos champs 
             //les données de l'user

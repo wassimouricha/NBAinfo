@@ -19,7 +19,7 @@ if(isset($_POST['validate'])){
   //ici on lui dit de mettre a jour la table booking , il va mettre à jour le titre, le description et le contenu d'une reservation qui possede 
   //l'id soit donc un id existant déjà dans la table booking
         $editres = $bdd->prepare('UPDATE booking SET date = ?, heure = ?, nom = ?, email = ?, equipe = ? , loge = ? WHERE id = ?');
-        //on execute la requete qui dans un tableau va venir récuperer le $_GET['id'] (ou ici la variable $idofres) soit donc la variable id 
+        //on execute la requete qui dans un tableau va venir récuperer le $_GET['id'] 
         $editres->execute(array($newrestitle, $newresdescriptioned, $newrescontent, $newresemail, $newresequipe,  $newloge, $_GET['id']));
 
         //si la session est connecté alors une fois modifier il va rediriger vers les réservations de l'id du compte qui est connecté 

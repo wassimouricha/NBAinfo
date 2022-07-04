@@ -11,8 +11,8 @@ if(isset($_GET['id'])  AND !empty($_GET['id'])){
     $checkIfResExist = $bdd->prepare('SELECT * FROM booking WHERE id = ?');
     $checkIfResExist->execute(array($idofres));
 
-    //rowcount nous permet de compter le nombre de donéne récuperer par cette requete
-    // et donc sir le nombre de donnée est bien supérieur à 0 ça veut dire que le menu existe bien et possède l'id que l'on a mis dans l'url
+    //rowcount nous permet de compter le nombre de données récuperer par cette requete
+    // et donc si le nombre de données est bien supérieur à 0 ça veut dire que le menu existe bien et possède l'id que l'on a mis dans l'url
     if($checkIfResExist->rowCount() > 0){
 
         //ici on va verifier que l'identifiant de l'auteur qui est connecté est bien l'auteur du menu que l'on veut modifier
